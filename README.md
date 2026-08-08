@@ -87,18 +87,23 @@ Luego abre `http://localhost:5500`.
 
 El catálogo (nombre, etiquetas, precio y foto de cada diseño, más el texto del encabezado de cada categoría) vive en `data/*.json`. En vez de editar esos archivos a mano, hay un panel web en `/admin` para hacerlo con formularios.
 
-Este panel no tiene servidor propio: usa **Git Gateway**, un servicio de Netlify que permite iniciar sesión y guardar cambios directo en este repositorio de GitHub, sin que tengas que dar tu contraseña de GitHub ni yo tenga que programar un backend. Por eso el sitio debe alojarse en **Netlify** (no en GitHub Pages) para que el panel funcione.
+Este panel no tiene servidor propio: usa **[DecapBridge](https://decapbridge.com)**, un servicio gratuito hecho específicamente para Decap CMS, que permite iniciar sesión y guardar cambios directo en este repositorio de GitHub sin que nadie tenga que dar su contraseña de GitHub. (Se usó DecapBridge y no Netlify Identity porque Netlify está retirando ese servicio para sitios nuevos.)
 
-### Activarlo (una sola vez, lo haces tú desde tu cuenta)
+El sitio está publicado en Netlify (`serenapastelapp.netlify.app`), pero eso es solo hosting — el login del panel lo maneja DecapBridge.
 
-1. En [netlify.com](https://netlify.com), conecta este repositorio de GitHub como un nuevo sitio ("Add new site" → "Import an existing project"). Netlify detecta que es un sitio estático, no necesita configuración de build.
-2. En el panel del sitio: **Site configuration → Identity → Enable Identity**.
-3. En **Identity → Registration**, cambia a **"Invite only"** (para que nadie más se registre por su cuenta).
-4. En **Identity → Services → Git Gateway**, dale a **Enable Git Gateway**.
-5. En la pestaña **Identity**, usa **Invite users** y escribe tu correo. Te llega un correo para poner tu contraseña.
-6. Ya con tu cuenta activa, entra a `https://tu-sitio.netlify.app/admin/`, inicia sesión, y ahí puedes editar diseños, precios y fotos de las 12 categorías.
+### Cómo está configurado
 
-Cada cambio que guardes en el panel crea un commit en este repositorio (en `data/*.json`) y Netlify vuelve a publicar el sitio automáticamente en un par de minutos.
+- `admin/index.html` carga Decap CMS desde CDN (`unpkg.com/decap-cms`).
+- `admin/config.yml` define el backend (`identity_url` / `gateway_url` apuntando a DecapBridge, ver bloque `backend:`) y las 12 categorías del catálogo.
+- En [decapbridge.com](https://decapbridge.com), el sitio está registrado apuntando al repo `estevan-car/serena`, con un token de acceso de GitHub (fine-grained, con permiso de `Contents: Read and write` sobre ese repo únicamente) y Auth type `Classic`.
+
+### Para invitar a alguien más a editar el catálogo
+
+1. Entra a tu cuenta en [decapbridge.com](https://decapbridge.com), abre el sitio, y ve a **Manage collaborators**.
+2. Escribe su correo y envía la invitación. Le llega un correo para elegir contraseña (o login con Google/Microsoft).
+3. Ya puede entrar a `https://serenapastelapp.netlify.app/admin/` con su cuenta. Por defecto entra como **collaborator** (puede editar, no puede invitar a otros); lo puedes ascender a **admin** desde la misma tabla de colaboradores si quieres que también gestione accesos.
+
+Cada cambio que se guarde en el panel crea un commit en este repositorio (en `data/*.json`) y Netlify vuelve a publicar el sitio automáticamente en un par de minutos.
 
 ## Carrito (sin pagos en línea)
 
