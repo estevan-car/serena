@@ -1,0 +1,405 @@
+/* ============================================================
+   RESPONSIVE
+   Breakpoints: 1024px (tablet), 860px (menú móvil), 640px (móvil),
+   420px (móvil pequeño)
+   ============================================================ */
+
+
+/* ============================================================
+   HEADER / NAVEGACIÓN — se activa a partir de 860px
+   ============================================================ */
+
+@media (max-width: 860px){
+
+    .navegacion{
+        min-height: 76px;
+    }
+
+    .logo img{
+        height: 58px;
+    }
+
+    /* Ocultar menú de escritorio y mostrar botón hamburguesa */
+
+    .menu-movil{
+        display: flex;
+    }
+
+    .menu-principal{
+        position: fixed;
+        top: 92px;
+        left: var(--espacio-sm);
+        right: var(--espacio-sm);
+        z-index: 999;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--espacio-md);
+
+        padding: var(--espacio-lg);
+        background: rgba(255,255,255,.98);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid rgba(0,0,0,.06);
+        border-radius: var(--radio-lg);
+        box-shadow: var(--sombra-media);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px);
+        pointer-events: none;
+        transition:
+            opacity .3s ease,
+            transform .3s ease,
+            visibility .3s ease;
+    }
+
+    .menu-principal.abierto{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .menu-principal a{
+        display: block;
+        width: 100%;
+        padding: .35rem 0;
+        font-size: var(--texto-md);
+    }
+
+    .menu-principal a::after{
+        display: none;
+    }
+
+    /* Evitar scroll del body con el menú abierto */
+
+    body.menu-abierto{
+        overflow: hidden;
+    }
+
+    /* Animación del ícono hamburguesa -> X */
+
+    .boton-menu svg line{
+        transform-box: fill-box;
+        transform-origin: center;
+        transition: transform .3s ease, opacity .3s ease;
+    }
+
+    .boton-menu.activo svg line:nth-child(1){
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .boton-menu.activo svg line:nth-child(2){
+        opacity: 0;
+    }
+
+    .boton-menu.activo svg line:nth-child(3){
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+
+
+/* ============================================================
+   TABLET — 1024px
+   ============================================================ */
+
+@media (max-width: 1024px){
+
+    /* HERO INICIO */
+
+    .hero-contenedor{
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: var(--espacio-xl);
+    }
+
+    .contenido-hero{
+        align-items: center;
+        text-align: center;
+    }
+
+    .beneficios-hero{
+        justify-content: center;
+    }
+
+    .acciones-hero{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-slider{
+        order: -1;
+        max-width: 26rem;
+    }
+
+    /* PERSONALIZADOS Y PORQUE SERENA */
+
+    .contenido-personalizados,
+    .contenido-serena{
+        grid-template-columns: 1fr;
+        gap: var(--espacio-xl);
+    }
+
+    .imagen-personalizados{
+        height: 380px;
+        order: -1;
+    }
+
+    .imagen-serena{
+        order: -1;
+    }
+
+    .beneficios-serena{
+        grid-template-columns: 1fr;
+    }
+
+    /* GRIDS 3 COLUMNAS -> 2 */
+
+    .grid-especialidades,
+    .grid-productos,
+    .grid-ventajas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* CTA FINAL */
+
+    .imagen-cta{
+        height: 480px;
+    }
+
+    .card-cta{
+        right: var(--espacio-md);
+        left: var(--espacio-md);
+        width: auto;
+        max-width: none;
+        padding: var(--espacio-lg);
+    }
+
+    /* CATEGORÍAS (páginas de torta) */
+
+    .hero-categoria{
+        padding: 150px 0 90px;
+    }
+
+    .hero-categoria .contenedor{
+        grid-template-columns: 1fr;
+        gap: var(--espacio-xl);
+    }
+
+    .contenido-categoria{
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagen-categoria{
+        order: -1;
+        max-width: 32rem;
+        margin-inline: auto;
+    }
+
+    /* PERSONALIZADOR (diseno.html) */
+
+    .contenido-personalizador{
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-diseno{
+        position: static;
+    }
+}
+
+
+/* ============================================================
+   MÓVIL — 640px
+   ============================================================ */
+
+@media (max-width: 640px){
+
+    .contenedor{
+        width: min(100% - 1.5rem, var(--ancho-contenedor));
+    }
+
+    /* HERO INICIO */
+
+    .hero{
+        padding-top: .5rem;
+    }
+
+    .beneficios-hero{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .75rem;
+    }
+
+    .contenido-hero{
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .acciones-hero{
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .acciones-hero .boton{
+        text-align: center;
+    }
+
+    /* GRIDS -> 1 COLUMNA */
+
+    .grid-especialidades,
+    .grid-productos,
+    .grid-ventajas{
+        grid-template-columns: 1fr;
+    }
+
+    .productos-cta{
+        padding: var(--espacio-lg);
+    }
+
+    /* TESTIMONIOS */
+
+    .cabecera-testimonios{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--espacio-md);
+    }
+
+    .tarjeta-testimonio{
+        min-width: 82vw;
+    }
+
+    /* CTA FINAL */
+
+    .imagen-cta{
+        height: 320px;
+    }
+
+    .contenido-cta{
+        flex-direction: column;
+    }
+
+    .card-cta{
+        position: static;
+        transform: none;
+        margin-top: -3rem;
+        width: calc(100% - 2rem);
+    }
+
+    .contenido-cta:hover .card-cta{
+        transform: none;
+    }
+
+    /* FOOTER */
+
+    .contenido-footer{
+        grid-template-columns: 1fr;
+        gap: var(--espacio-xl);
+        padding: var(--espacio-xl) 0;
+    }
+
+    .footer-inferior{
+        flex-direction: column;
+        text-align: center;
+        gap: .75rem;
+    }
+
+    /* CATEGORÍAS (páginas de torta) */
+
+    .hero-categoria{
+        padding: 130px 0 70px;
+    }
+
+    .contenido-categoria h1{
+        font-size: clamp(2.2rem, 8vw, 3rem);
+    }
+
+    .menu-categorias{
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: .5rem;
+        margin-inline: calc(-1 * var(--espacio-sm));
+        padding-inline: var(--espacio-sm);
+    }
+
+    .categoria{
+        flex-shrink: 0;
+    }
+
+    .grid-disenos{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* PERSONALIZADOR (diseno.html) */
+
+    .hero-diseno{
+        padding: 130px 0 60px;
+    }
+
+    .configurador{
+        padding: var(--espacio-lg);
+    }
+
+    .opciones-personas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .miniaturas{
+        flex-wrap: wrap;
+    }
+
+    .miniaturas figure{
+        width: 72px;
+    }
+
+    .contenido-modal{
+        padding: var(--espacio-lg);
+    }
+
+    .acciones-modal{
+        flex-direction: column;
+    }
+
+    /* WHATSAPP FLOTANTE */
+
+    .whatsapp{
+        right: 18px;
+        bottom: 18px;
+        width: 56px;
+        height: 56px;
+        font-size: 1.7rem;
+    }
+
+    .mensaje-whatsapp{
+        right: 14px;
+        bottom: 90px;
+        left: 14px;
+        width: auto;
+    }
+}
+
+
+/* ============================================================
+   MÓVIL PEQUEÑO — 420px
+   ============================================================ */
+
+@media (max-width: 420px){
+
+    .opciones-personas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .resumen-pedido article{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .35rem;
+    }
+
+    .titulo-principal{
+        font-size: clamp(2.2rem, 9vw, 3rem);
+    }
+}
