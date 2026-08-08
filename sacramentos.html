@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/components/slider.css">
     <link rel="stylesheet" href="css/components/tarjetas.css">
     <link rel="stylesheet" href="css/components/whatsapp.css">
+    <link rel="stylesheet" href="css/components/carrito.css">
 
     <link rel="stylesheet" href="css/layout/footer.css">
     <link rel="stylesheet" href="css/layout/header.css">
@@ -31,7 +32,7 @@
     <title>Sacramentos</title>
 
 </head>
-<body>
+<body data-categoria="Sacramentos">
     
     <header class="header">
 
@@ -62,6 +63,33 @@
             </ul>
 
             <ul class="acciones-header">
+
+                <li>
+
+                    <button class="boton-carrito" aria-label="Carrito">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <circle cx="9" cy="21" r="1"></circle>
+
+                            <circle cx="20" cy="21" r="1"></circle>
+
+                            <path d="M2.05 2h2l2.66 12.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.69L22 6H6"></path>
+
+                        </svg>
+
+                        <span class="contador-carrito" aria-live="polite" style="display:none;">0</span>
+
+                    </button>
+
+                </li>
 
                 <li class="menu-movil">
 
@@ -240,7 +268,9 @@
                                 Nubes • Celeste • Perlas
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Bautizo%20Celestial."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Bautizo%20Celestial."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -248,6 +278,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Bautizo Celestial" aria-label="Agregar Bautizo Celestial al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -271,7 +307,9 @@
                                 Blanco • Cáliz • Perlas
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Primera%20Comunión%20Blanca."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Primera%20Comunión%20Blanca."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -279,6 +317,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Primera Comunión Blanca" aria-label="Agregar Primera Comunión Blanca al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -302,7 +346,9 @@
                                 Cáliz • Uvas • Dorado
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Cáliz%20Dorado."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Cáliz%20Dorado."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -310,6 +356,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Cáliz Dorado" aria-label="Agregar Cáliz Dorado al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -333,7 +385,9 @@
                                 Cruz • Perlas • Blanco
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Cruz%20de%20Perlas."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Cruz%20de%20Perlas."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -341,6 +395,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Cruz de Perlas" aria-label="Agregar Cruz de Perlas al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -364,7 +424,9 @@
                                 Ángel • Nubes • Pastel
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Ángel%20Guardián."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Ángel%20Guardián."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -372,6 +434,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Ángel Guardián" aria-label="Agregar Ángel Guardián al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -395,7 +463,9 @@
                                 Paloma • Dorado • Blanco
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Confirmación%20Elegante."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Confirmación%20Elegante."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -403,6 +473,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Confirmación Elegante" aria-label="Agregar Confirmación Elegante al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -426,7 +502,9 @@
                                 Paloma • Ramas • Blanco
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Paloma%20de%20la%20Paz."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Paloma%20de%20la%20Paz."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -434,6 +512,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Paloma de la Paz" aria-label="Agregar Paloma de la Paz al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -457,7 +541,9 @@
                                 Rosario • Encaje • Beige
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Rosario%20Delicado."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Rosario%20Delicado."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -465,6 +551,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Rosario Delicado" aria-label="Agregar Rosario Delicado al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -488,7 +580,9 @@
                                 Biblia • Velas • Blanco
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Comunión%20Clásica."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Comunión%20Clásica."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -496,6 +590,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Comunión Clásica" aria-label="Agregar Comunión Clásica al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -661,6 +761,54 @@
 
     </a>
     
+    <script src="js/carrito.js"></script>
+    <aside class="carrito-panel" id="carritoPanel" aria-hidden="true">
+
+        <div class="carrito-overlay"></div>
+
+        <div class="carrito-contenido">
+
+            <header class="carrito-header">
+
+                <h3>Tu pedido</h3>
+
+                <button class="cerrar-carrito" aria-label="Cerrar carrito">&times;</button>
+
+            </header>
+
+            <ul class="carrito-lista" id="carritoLista"></ul>
+
+            <p class="carrito-vacio" id="carritoVacio">
+
+                <i class="fa-solid fa-cake-candles"></i>
+
+                Aún no has agregado diseños.<br>
+                Explora el catálogo y dale a "Agregar al carrito".
+
+            </p>
+
+            <footer class="carrito-footer">
+
+                <a href="#" id="enviarCarritoWhatsapp" class="boton-principal deshabilitado" target="_blank" rel="noopener noreferrer">
+
+                    Enviar pedido por WhatsApp
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+                <button type="button" id="vaciarCarrito">Vaciar carrito</button>
+
+                <small>Te responderemos por WhatsApp para confirmar detalles y precio.</small>
+
+            </footer>
+
+        </div>
+
+    </aside>
+
+    <div class="carrito-toast" id="carritoToast"></div>
+
     <script src="js/menu.js"></script>
     <script src="js/whatsapp.js"></script>
     <script src="js/slider.js"></script>

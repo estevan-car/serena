@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/components/slider.css">
     <link rel="stylesheet" href="css/components/tarjetas.css">
     <link rel="stylesheet" href="css/components/whatsapp.css">
+    <link rel="stylesheet" href="css/components/carrito.css">
 
     <link rel="stylesheet" href="css/layout/footer.css">
     <link rel="stylesheet" href="css/layout/header.css">
@@ -30,7 +31,7 @@
 
     <title>Alfajores</title>
 </head>
-<body><header class="header">
+<body data-categoria="Alfajores"><header class="header">
 
         <nav class="navegacion contenedor" aria-label="Navegación principal">
 
@@ -59,6 +60,33 @@
             </ul>
 
             <ul class="acciones-header">
+
+                <li>
+
+                    <button class="boton-carrito" aria-label="Carrito">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <circle cx="9" cy="21" r="1"></circle>
+
+                            <circle cx="20" cy="21" r="1"></circle>
+
+                            <path d="M2.05 2h2l2.66 12.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.69L22 6H6"></path>
+
+                        </svg>
+
+                        <span class="contador-carrito" aria-live="polite" style="display:none;">0</span>
+
+                    </button>
+
+                </li>
 
                 <li class="menu-movil">
 
@@ -237,7 +265,9 @@
                                 Arequipe • Coco
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Arequipe%20Clásico."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Arequipe%20Clásico."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -245,6 +275,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Arequipe Clásico" aria-label="Agregar Arequipe Clásico al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -268,7 +304,9 @@
                                 Chocolate • Arequipe
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Chocolate%20Cubierto."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Chocolate%20Cubierto."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -276,6 +314,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Chocolate Cubierto" aria-label="Agregar Chocolate Cubierto al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -299,7 +343,9 @@
                                 Coco • Arequipe
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Coco%20Rallado."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Coco%20Rallado."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -307,6 +353,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Coco Rallado" aria-label="Agregar Coco Rallado al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -330,7 +382,9 @@
                                 Nuez • Arequipe
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Nuez%20y%20Arequipe."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Nuez%20y%20Arequipe."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -338,6 +392,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Nuez y Arequipe" aria-label="Agregar Nuez y Arequipe al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -361,7 +421,9 @@
                                 Tamaño mini • Surtido
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Mini%20Alfajores."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Mini%20Alfajores."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -369,6 +431,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Mini Alfajores" aria-label="Agregar Mini Alfajores al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -392,7 +460,9 @@
                                 Chocolate • Chocolate blanco
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Doble%20Chocolate."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Doble%20Chocolate."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -400,6 +470,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Doble Chocolate" aria-label="Agregar Doble Chocolate al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -423,7 +499,9 @@
                                 Relleno de frutos rojos
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Frutos%20Rojos."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Frutos%20Rojos."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -431,6 +509,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Frutos Rojos" aria-label="Agregar Frutos Rojos al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -454,7 +538,9 @@
                                 Vainilla • Glaseado
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Glaseado%20de%20Vainilla."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Glaseado%20de%20Vainilla."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -462,6 +548,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Glaseado de Vainilla" aria-label="Agregar Glaseado de Vainilla al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -485,7 +577,9 @@
                                 Variedad • Regalo
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Caja%20Surtida."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Caja%20Surtida."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -493,6 +587,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Caja Surtida" aria-label="Agregar Caja Surtida al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -659,6 +759,54 @@
 
     </a>
     
+    <script src="js/carrito.js"></script>
+    <aside class="carrito-panel" id="carritoPanel" aria-hidden="true">
+
+        <div class="carrito-overlay"></div>
+
+        <div class="carrito-contenido">
+
+            <header class="carrito-header">
+
+                <h3>Tu pedido</h3>
+
+                <button class="cerrar-carrito" aria-label="Cerrar carrito">&times;</button>
+
+            </header>
+
+            <ul class="carrito-lista" id="carritoLista"></ul>
+
+            <p class="carrito-vacio" id="carritoVacio">
+
+                <i class="fa-solid fa-cake-candles"></i>
+
+                Aún no has agregado diseños.<br>
+                Explora el catálogo y dale a "Agregar al carrito".
+
+            </p>
+
+            <footer class="carrito-footer">
+
+                <a href="#" id="enviarCarritoWhatsapp" class="boton-principal deshabilitado" target="_blank" rel="noopener noreferrer">
+
+                    Enviar pedido por WhatsApp
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+                <button type="button" id="vaciarCarrito">Vaciar carrito</button>
+
+                <small>Te responderemos por WhatsApp para confirmar detalles y precio.</small>
+
+            </footer>
+
+        </div>
+
+    </aside>
+
+    <div class="carrito-toast" id="carritoToast"></div>
+
     <script src="js/menu.js"></script>
     <script src="js/whatsapp.js"></script>
     <script src="js/slider.js"></script>

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/components/slider.css">
     <link rel="stylesheet" href="css/components/tarjetas.css">
     <link rel="stylesheet" href="css/components/whatsapp.css">
+    <link rel="stylesheet" href="css/components/carrito.css">
 
     <link rel="stylesheet" href="css/layout/footer.css">
     <link rel="stylesheet" href="css/layout/header.css">
@@ -30,7 +31,7 @@
 
     <title>Impresion Comestible</title>
 </head>
-<body>
+<body data-categoria="Impresión Comestible">
 
     <header class="header">
 
@@ -61,6 +62,33 @@
             </ul>
 
             <ul class="acciones-header">
+
+                <li>
+
+                    <button class="boton-carrito" aria-label="Carrito">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <circle cx="9" cy="21" r="1"></circle>
+
+                            <circle cx="20" cy="21" r="1"></circle>
+
+                            <path d="M2.05 2h2l2.66 12.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.69L22 6H6"></path>
+
+                        </svg>
+
+                        <span class="contador-carrito" aria-live="polite" style="display:none;">0</span>
+
+                    </button>
+
+                </li>
 
                 <li class="menu-movil">
 
@@ -239,7 +267,9 @@
                                 Papel de arroz • Full color
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Foto%20Personalizada."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Foto%20Personalizada."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -247,6 +277,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Foto Personalizada" aria-label="Agregar Foto Personalizada al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -270,7 +306,9 @@
                                 Marca • Nitidez • Oblea
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Logo%20Corporativo."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Logo%20Corporativo."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -278,6 +316,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Logo Corporativo" aria-label="Agregar Logo Corporativo al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -301,7 +345,9 @@
                                 Ilustración • Full color
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Personaje%20Favorito."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Personaje%20Favorito."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -309,6 +355,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Personaje Favorito" aria-label="Agregar Personaje Favorito al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -332,7 +384,9 @@
                                 Escena • Papel de arroz
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Fondo%20Temático."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Fondo%20Temático."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -340,6 +394,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Fondo Temático" aria-label="Agregar Fondo Temático al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -363,7 +423,9 @@
                                 Texto • Tipografía • Color
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Mensaje%20Especial."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Mensaje%20Especial."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -371,6 +433,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Mensaje Especial" aria-label="Agregar Mensaje Especial al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -394,7 +462,9 @@
                                 Arte digital • Nitidez
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Ilustración%20a%20Color."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Ilustración%20a%20Color."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -402,6 +472,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Ilustración a Color" aria-label="Agregar Ilustración a Color al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -425,7 +501,9 @@
                                 Fotos múltiples • Oblea
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Collage%20de%20Recuerdos."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Collage%20de%20Recuerdos."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -433,6 +511,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Collage de Recuerdos" aria-label="Agregar Collage de Recuerdos al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -456,7 +540,9 @@
                                 Caricatura • Full color
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Diseño%20Infantil."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Diseño%20Infantil."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -464,6 +550,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Diseño Infantil" aria-label="Agregar Diseño Infantil al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -487,7 +579,9 @@
                                 Diseño a medida • HD
                             </p>
 
-                            <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Arte%20Personalizado."
+                            <div class="acciones-diseno">
+
+                                <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20personalizar%20el%20diseño%20Arte%20Personalizado."
                                 class="boton-diseno">
 
                                 Quiero este diseño
@@ -495,6 +589,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
 
                             </a>
+
+                                <button type="button" class="boton-agregar-carrito" data-nombre="Arte Personalizado" aria-label="Agregar Arte Personalizado al carrito">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                </button>
+
+                            </div>
 
                         </section>
 
@@ -660,6 +760,54 @@
 
     </a>
     
+    <script src="js/carrito.js"></script>
+    <aside class="carrito-panel" id="carritoPanel" aria-hidden="true">
+
+        <div class="carrito-overlay"></div>
+
+        <div class="carrito-contenido">
+
+            <header class="carrito-header">
+
+                <h3>Tu pedido</h3>
+
+                <button class="cerrar-carrito" aria-label="Cerrar carrito">&times;</button>
+
+            </header>
+
+            <ul class="carrito-lista" id="carritoLista"></ul>
+
+            <p class="carrito-vacio" id="carritoVacio">
+
+                <i class="fa-solid fa-cake-candles"></i>
+
+                Aún no has agregado diseños.<br>
+                Explora el catálogo y dale a "Agregar al carrito".
+
+            </p>
+
+            <footer class="carrito-footer">
+
+                <a href="#" id="enviarCarritoWhatsapp" class="boton-principal deshabilitado" target="_blank" rel="noopener noreferrer">
+
+                    Enviar pedido por WhatsApp
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+                <button type="button" id="vaciarCarrito">Vaciar carrito</button>
+
+                <small>Te responderemos por WhatsApp para confirmar detalles y precio.</small>
+
+            </footer>
+
+        </div>
+
+    </aside>
+
+    <div class="carrito-toast" id="carritoToast"></div>
+
     <script src="js/menu.js"></script>
     <script src="js/whatsapp.js"></script>
     <script src="js/slider.js"></script>

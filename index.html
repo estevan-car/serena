@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/components/slider.css">
     <link rel="stylesheet" href="css/components/tarjetas.css">
     <link rel="stylesheet" href="css/components/whatsapp.css">
+    <link rel="stylesheet" href="css/components/carrito.css">
 
     <!-- Animaciones -->
 
@@ -74,6 +75,33 @@
             </ul>
 
             <ul class="acciones-header">
+
+                <li>
+
+                    <button class="boton-carrito" aria-label="Carrito">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <circle cx="9" cy="21" r="1"></circle>
+
+                            <circle cx="20" cy="21" r="1"></circle>
+
+                            <path d="M2.05 2h2l2.66 12.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.69L22 6H6"></path>
+
+                        </svg>
+
+                        <span class="contador-carrito" aria-live="polite" style="display:none;">0</span>
+
+                    </button>
+
+                </li>
 
                 <li class="menu-movil">
 
@@ -1559,6 +1587,54 @@
 
     <script src="js/slider.js"></script>
     <script src="js/testimonios.js"></script>
+    <script src="js/carrito.js"></script>
+    <aside class="carrito-panel" id="carritoPanel" aria-hidden="true">
+
+        <div class="carrito-overlay"></div>
+
+        <div class="carrito-contenido">
+
+            <header class="carrito-header">
+
+                <h3>Tu pedido</h3>
+
+                <button class="cerrar-carrito" aria-label="Cerrar carrito">&times;</button>
+
+            </header>
+
+            <ul class="carrito-lista" id="carritoLista"></ul>
+
+            <p class="carrito-vacio" id="carritoVacio">
+
+                <i class="fa-solid fa-cake-candles"></i>
+
+                Aún no has agregado diseños.<br>
+                Explora el catálogo y dale a "Agregar al carrito".
+
+            </p>
+
+            <footer class="carrito-footer">
+
+                <a href="#" id="enviarCarritoWhatsapp" class="boton-principal deshabilitado" target="_blank" rel="noopener noreferrer">
+
+                    Enviar pedido por WhatsApp
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+                <button type="button" id="vaciarCarrito">Vaciar carrito</button>
+
+                <small>Te responderemos por WhatsApp para confirmar detalles y precio.</small>
+
+            </footer>
+
+        </div>
+
+    </aside>
+
+    <div class="carrito-toast" id="carritoToast"></div>
+
     <script src="js/menu.js"></script>
     <script src="js/whatsapp.js"></script>
     
