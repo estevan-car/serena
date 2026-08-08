@@ -54,8 +54,7 @@
 /* GALERÍA */
 
 .galeria-diseno{
-    position: sticky;
-    top: 120px;
+    position: static;
 }
 
 .imagen-principal{
