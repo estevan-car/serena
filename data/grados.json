@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Tortas de Grado",
+    "titulo": "Celebra tu logro con un diseño a la altura",
+    "descripcion": "Descubre una selección de tortas pensadas para festejar cada grado, desde el jardín hasta la universidad. Cada diseño puede personalizarse en colores, tamaño y decoración según tu celebración.",
+    "imagen": "recursos/imagenes/grados/hero.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Toga Dorada",
+      "tags": "Birrete • Diploma • Dorado",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/grados/diseno-1.webp"
+    },
+    {
+      "nombre": "Camino al Éxito",
+      "tags": "Laureles • Blanco • Oro",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/grados/diseno-2.webp"
+    },
+    {
+      "nombre": "Birrete Elegante",
+      "tags": "Birrete • Perlas • Crema",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/grados/diseno-3.webp"
+    },
+    {
+      "nombre": "Diploma de Honor",
+      "tags": "Pergamino • Cinta • Beige",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/grados/diseno-4.webp"
+    },
+    {
+      "nombre": "Futuro Brillante",
+      "tags": "Estrellas • Dorado • Azul",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/grados/diseno-5.webp"
+    },
+    {
+      "nombre": "Academia Chic",
+      "tags": "Libros • Birrete • Pastel",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/grados/diseno-6.webp"
+    },
+    {
+      "nombre": "Laureles de Triunfo",
+      "tags": "Laureles • Verde • Oro",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/grados/diseno-7.webp"
+    },
+    {
+      "nombre": "Graduate Bloom",
+      "tags": "Flores • Birrete • Blanco",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/grados/diseno-8.webp"
+    },
+    {
+      "nombre": "Clásico Universitario",
+      "tags": "Escudo • Cinta • Vino",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/grados/diseno-9.webp"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Tortas de Sacramentos",
+    "titulo": "Tortas para celebrar momentos de fe",
+    "descripcion": "Descubre una selección de tortas creadas para bautizos, primeras comuniones y confirmaciones. Cada diseño puede personalizarse en colores, tamaño y decoración según tu celebración.",
+    "imagen": "recursos/imagenes/sacramentos/hero.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Bautizo Celestial",
+      "tags": "Nubes • Celeste • Perlas",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/sacramentos/diseno-1.webp"
+    },
+    {
+      "nombre": "Primera Comunión Blanca",
+      "tags": "Blanco • Cáliz • Perlas",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/sacramentos/diseno-2.webp"
+    },
+    {
+      "nombre": "Cáliz Dorado",
+      "tags": "Cáliz • Uvas • Dorado",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/sacramentos/diseno-3.webp"
+    },
+    {
+      "nombre": "Cruz de Perlas",
+      "tags": "Cruz • Perlas • Blanco",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/sacramentos/diseno-4.webp"
+    },
+    {
+      "nombre": "Ángel Guardián",
+      "tags": "Ángel • Nubes • Pastel",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/sacramentos/diseno-5.webp"
+    },
+    {
+      "nombre": "Confirmación Elegante",
+      "tags": "Paloma • Dorado • Blanco",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/sacramentos/diseno-6.webp"
+    },
+    {
+      "nombre": "Paloma de la Paz",
+      "tags": "Paloma • Ramas • Blanco",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/sacramentos/diseno-7.webp"
+    },
+    {
+      "nombre": "Rosario Delicado",
+      "tags": "Rosario • Encaje • Beige",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/sacramentos/diseno-8.webp"
+    },
+    {
+      "nombre": "Comunión Clásica",
+      "tags": "Biblia • Velas • Blanco",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/sacramentos/diseno-9.webp"
+    }
+  ]
+}

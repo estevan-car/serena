@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Alfajores",
+    "titulo": "Alfajores artesanales, suaves y deliciosos",
+    "descripcion": "Descubre nuestros alfajores artesanales, elaborados con ingredientes de calidad. Perfectos para regalar, compartir o disfrutar en cualquier momento.",
+    "imagen": "recursos/imagenes/productos/alfajores.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Arequipe Clásico",
+      "tags": "Arequipe • Coco",
+      "precio": 3500,
+      "imagen": "recursos/imagenes/productos/alfajores/diseno-1.webp"
+    },
+    {
+      "nombre": "Chocolate Cubierto",
+      "tags": "Chocolate • Arequipe",
+      "precio": 3500,
+      "imagen": "recursos/imagenes/productos/alfajores/diseno-2.webp"
+    },
+    {
+      "nombre": "Coco Rallado",
+      "tags": "Coco • Arequipe",
+      "precio": 3500,
+      "imagen": "recursos/imagenes/productos/alfajores/diseno-3.webp"
+    },
+    {
+      "nombre": "Nuez y Arequipe",
+      "tags": "Nuez • Arequipe",
+      "precio": 3500,
+      "imagen": "recursos/imagenes/productos/alfajores/diseno-4.webp"
+    },
+    {
+      "nombre": "Mini Alfajores",
+      "tags": "Tamaño mini • Surtido",
+      "precio": 3500,
+      "imagen": "recursos/imagenes/productos/alfajores/diseno-5.webp"
+    },
+    {
+      "nombre": "Doble Chocolate",
+      "tags": "Chocolate • Chocolate blanco",
+      "precio": 3500,
+      "imagen": "recursos/imagenes/productos/alfajores/diseno-6.webp"
+    },
+    {
+      "nombre": "Frutos Rojos",
+      "tags": "Relleno de frutos rojos",
+      "precio": 3500,
+      "imagen": "recursos/imagenes/productos/alfajores/diseno-7.webp"
+    },
+    {
+      "nombre": "Glaseado de Vainilla",
+      "tags": "Vainilla • Glaseado",
+      "precio": 3500,
+      "imagen": "recursos/imagenes/productos/alfajores/diseno-8.webp"
+    },
+    {
+      "nombre": "Caja Surtida",
+      "tags": "Variedad • Regalo",
+      "precio": 3500,
+      "imagen": "recursos/imagenes/productos/alfajores/diseno-9.webp"
+    }
+  ]
+}

@@ -147,6 +147,22 @@
     color: rgba(0,0,0,.15);
 }
 
+/* TOTAL */
+
+.carrito-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espacio-md) var(--espacio-lg) 0;
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+
+.carrito-total strong{
+    color: var(--color-principal);
+    font-size: 1.15rem;
+}
+
 /* PIE DEL PANEL */
 
 .carrito-footer{

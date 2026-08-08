@@ -27,9 +27,19 @@ function guardarCarrito(carrito){
 
 }
 
+/* PRECIO */
+
+function formatearPrecio(numero){
+
+    const valor = Number(numero) || 0;
+
+    return "$" + valor.toLocaleString("es-CO");
+
+}
+
 /* AGREGAR / QUITAR */
 
-function agregarAlCarrito(nombre, categoria){
+function agregarAlCarrito(nombre, categoria, precio){
 
     if(!nombre) return;
 
@@ -45,7 +55,12 @@ function agregarAlCarrito(nombre, categoria){
 
     } else {
 
-        carrito.push({ nombre, categoria: categoria || "", cantidad: 1 });
+        carrito.push({
+            nombre,
+            categoria: categoria || "",
+            precio: Number(precio) || 0,
+            cantidad: 1,
+        });
 
     }
 
@@ -93,20 +108,33 @@ function actualizarContador(){
 
 /* MENSAJE DE WHATSAPP */
 
+function calcularTotal(carrito){
+
+    return carrito.reduce((acc, item)=> acc + (item.precio || 0) * item.cantidad, 0);
+
+}
+
 function construirMensajeWhatsapp(carrito){
 
     const lineas = carrito.map((item, i)=>{
 
         const cantidad = item.cantidad > 1 ? ` x${item.cantidad}` : "";
         const categoria = item.categoria ? ` (${item.categoria})` : "";
+        const subtotal = item.precio
+            ? ` — ${formatearPrecio(item.precio * item.cantidad)}`
+            : "";
 
-        return `${i + 1}. ${item.nombre}${categoria}${cantidad}`;
+        return `${i + 1}. ${item.nombre}${categoria}${cantidad}${subtotal}`;
 
     });
 
+    const total = calcularTotal(carrito);
+    const lineaTotal = total > 0 ? `\n\nTotal aproximado: ${formatearPrecio(total)}` : "";
+
     return `🎂 *Nuevo pedido - Serena*\n` +
         `━━━━━━━━━━━━━━━━━━━━━━\n\n` +
-        `${lineas.join("\n")}\n\n` +
+        `${lineas.join("\n")}` +
+        `${lineaTotal}\n\n` +
         `━━━━━━━━━━━━━━━━━━━━━━\n\n` +
         `Hola Serena 😊, quiero cotizar estos diseños.`;
 
@@ -120,6 +148,7 @@ function renderizarCarrito(){
     const vacio = document.querySelector("#carritoVacio");
     const enviarBtn = document.querySelector("#enviarCarritoWhatsapp");
     const vaciarBtn = document.querySelector("#vaciarCarrito");
+    const totalEl = document.querySelector("#carritoTotal");
 
     if(!lista) return;
 
@@ -132,6 +161,7 @@ function renderizarCarrito(){
         vacio.style.display = "flex";
         if(enviarBtn) enviarBtn.classList.add("deshabilitado");
         if(vaciarBtn) vaciarBtn.style.display = "none";
+        if(totalEl) totalEl.style.display = "none";
 
     } else {
 
@@ -145,10 +175,14 @@ function renderizarCarrito(){
 
             li.className = "carrito-item";
 
+            const precioTexto = item.precio
+                ? `${formatearPrecio(item.precio)}${item.cantidad > 1 ? ` x${item.cantidad} = ${formatearPrecio(item.precio * item.cantidad)}` : ""}`
+                : "Precio a cotizar";
+
             li.innerHTML = `
                 <section class="carrito-item-info">
                     <h4>${item.nombre}</h4>
-                    <p>${item.categoria}${item.cantidad > 1 ? ` · x${item.cantidad}` : ""}</p>
+                    <p>${item.categoria}${item.categoria ? " · " : ""}${precioTexto}</p>
                 </section>
                 <button type="button" class="carrito-item-quitar" aria-label="Quitar ${item.nombre} del carrito">
                     <i class="fa-solid fa-xmark"></i>
@@ -164,6 +198,23 @@ function renderizarCarrito(){
             lista.appendChild(li);
 
         });
+
+        if(totalEl){
+
+            const total = calcularTotal(carrito);
+
+            if(total > 0){
+
+                totalEl.style.display = "flex";
+                totalEl.querySelector("strong").textContent = formatearPrecio(total);
+
+            } else {
+
+                totalEl.style.display = "none";
+
+            }
+
+        }
 
     }
 
@@ -287,17 +338,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     }
 
-    /* Botones "Agregar al carrito" de cada diseño */
+    /* Botones "Agregar al carrito" de cada diseño.
+       Delegado en document porque el catálogo se pinta de forma dinámica
+       (fetch a data/*.json) y esos botones no existen todavía en este punto. */
 
     const categoriaPagina = document.body.dataset.categoria || document.title;
 
-    document.querySelectorAll(".boton-agregar-carrito").forEach(boton=>{
+    document.addEventListener("click", (e)=>{
 
-        boton.addEventListener("click", ()=>{
+        const boton = e.target.closest(".boton-agregar-carrito");
 
-            agregarAlCarrito(boton.dataset.nombre, categoriaPagina);
+        if(!boton) return;
 
-        });
+        agregarAlCarrito(boton.dataset.nombre, categoriaPagina, boton.dataset.precio);
 
     });
 

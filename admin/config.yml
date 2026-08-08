@@ -1,0 +1,290 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Sube fotos nuevas aquí. Las fotos ya existentes en recursos/imagenes/ no se mueven.
+media_folder: "recursos/imagenes/uploads"
+public_folder: "recursos/imagenes/uploads"
+
+locale: "es"
+
+collections:
+  - name: "catalogo"
+    label: "Catálogo de diseños"
+    files:
+      - name: "15-anios"
+        label: "15 Años"
+        file: "data/15-anios.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "comestible"
+        label: "Impresión Comestible"
+        file: "data/comestible.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "cumpleanos"
+        label: "Cumpleaños"
+        file: "data/cumpleanos.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "grados"
+        label: "Grados"
+        file: "data/grados.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "sacramentos"
+        label: "Sacramentos"
+        file: "data/sacramentos.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "tematicas"
+        label: "Tortas Temáticas"
+        file: "data/tematicas.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "tortas-serena"
+        label: "Tortas Serena"
+        file: "data/tortas-serena.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "cupcakes"
+        label: "Cupcakes"
+        file: "data/cupcakes.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "alfajores"
+        label: "Alfajores"
+        file: "data/alfajores.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "galletas"
+        label: "Galletas Personalizadas"
+        file: "data/galletas.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "donas"
+        label: "Mini Donas"
+        file: "data/donas.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+
+      - name: "desayunos"
+        label: "Desayunos Sorpresa"
+        file: "data/desayunos.json"
+        fields:
+          - label: "Encabezado de la página"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Etiqueta (arriba del título)", name: "etiqueta", widget: "string"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Descripción", name: "descripcion", widget: "text"}
+              - {label: "Imagen principal", name: "imagen", widget: "image", choose_url: false}
+          - label: "Diseños del catálogo"
+            name: "disenos"
+            widget: "list"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - {label: "Nombre del diseño", name: "nombre", widget: "string"}
+              - {label: "Etiquetas (ej. Rosas • Dorado • Perlas)", name: "tags", widget: "string"}
+              - {label: "Precio (COP)", name: "precio", widget: "number", value_type: "int", min: 0}
+              - {label: "Foto", name: "imagen", widget: "image", choose_url: false}
+

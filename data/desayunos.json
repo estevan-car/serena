@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Desayunos Sorpresa",
+    "titulo": "Desayunos sorpresa llenos de detalles",
+    "descripcion": "Descubre nuestros desayunos sorpresa, diseñados para regalar una experiencia inolvidable. Personalizables según la ocasión y tus gustos.",
+    "imagen": "recursos/imagenes/productos/desayunos.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Desayuno Romántico",
+      "tags": "Flores • Globos • Rosado",
+      "precio": 90000,
+      "imagen": "recursos/imagenes/productos/desayunos/diseno-1.webp"
+    },
+    {
+      "nombre": "Desayuno Cumpleaños",
+      "tags": "Globos • Torta mini",
+      "precio": 90000,
+      "imagen": "recursos/imagenes/productos/desayunos/diseno-2.webp"
+    },
+    {
+      "nombre": "Caja Dulce y Salada",
+      "tags": "Dulce • Salado • Variado",
+      "precio": 90000,
+      "imagen": "recursos/imagenes/productos/desayunos/diseno-3.webp"
+    },
+    {
+      "nombre": "Desayuno Flores",
+      "tags": "Flores frescas • Delicado",
+      "precio": 90000,
+      "imagen": "recursos/imagenes/productos/desayunos/diseno-4.webp"
+    },
+    {
+      "nombre": "Desayuno Globos",
+      "tags": "Globos • Colores",
+      "precio": 90000,
+      "imagen": "recursos/imagenes/productos/desayunos/diseno-5.webp"
+    },
+    {
+      "nombre": "Desayuno Mini Torta",
+      "tags": "Mini torta • Frutas",
+      "precio": 90000,
+      "imagen": "recursos/imagenes/productos/desayunos/diseno-6.webp"
+    },
+    {
+      "nombre": "Desayuno Frutas",
+      "tags": "Frutas frescas • Saludable",
+      "precio": 90000,
+      "imagen": "recursos/imagenes/productos/desayunos/diseno-7.webp"
+    },
+    {
+      "nombre": "Desayuno Café y Postres",
+      "tags": "Café • Postres • Clásico",
+      "precio": 90000,
+      "imagen": "recursos/imagenes/productos/desayunos/diseno-8.webp"
+    },
+    {
+      "nombre": "Desayuno Premium",
+      "tags": "Completo • Detalles extra",
+      "precio": 90000,
+      "imagen": "recursos/imagenes/productos/desayunos/diseno-9.webp"
+    }
+  ]
+}

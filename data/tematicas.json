@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Tortas Temáticas",
+    "titulo": "Convierte tu tema favorito en una torta única",
+    "descripcion": "Descubre una selección de tortas inspiradas en los personajes y mundos que más te gustan. Cada diseño puede personalizarse en colores, tamaño y decoración según tu celebración.",
+    "imagen": "recursos/imagenes/tematicas/hero.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Superhéroes en Acción",
+      "tags": "Cómic • Colores • Escudo",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/tematicas/diseno-1.webp"
+    },
+    {
+      "nombre": "Princesas de Cuento",
+      "tags": "Castillo • Rosado • Corona",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/tematicas/diseno-2.webp"
+    },
+    {
+      "nombre": "Safari Aventura",
+      "tags": "Animales • Verde • Jungla",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/tematicas/diseno-3.webp"
+    },
+    {
+      "nombre": "Espacio y Estrellas",
+      "tags": "Planetas • Azul • Estrellas",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/tematicas/diseno-4.webp"
+    },
+    {
+      "nombre": "Fútbol Fanático",
+      "tags": "Cancha • Balón • Colores",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/tematicas/diseno-5.webp"
+    },
+    {
+      "nombre": "Unicornio Mágico",
+      "tags": "Unicornio • Pastel • Arcoíris",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/tematicas/diseno-6.webp"
+    },
+    {
+      "nombre": "Dinosaurios",
+      "tags": "Jurásico • Verde • Volcán",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/tematicas/diseno-7.webp"
+    },
+    {
+      "nombre": "Piratas del Caribe",
+      "tags": "Barco • Tesoro • Azul",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/tematicas/diseno-8.webp"
+    },
+    {
+      "nombre": "Mundo Gamer",
+      "tags": "Videojuegos • Neón • Consola",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/tematicas/diseno-9.webp"
+    }
+  ]
+}

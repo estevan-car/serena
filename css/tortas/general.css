@@ -162,6 +162,13 @@
     line-height: 1.7;
 }
 
+.informacion-diseno .precio-diseno{
+    margin-top: -14px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-principal);
+}
+
 /* CTA PERSONALIZADO */
 
 .cta-personalizado{

@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Mini Donas",
+    "titulo": "Mini donas para mesas dulces y fiestas",
+    "descripcion": "Descubre nuestras mini donas artesanales, perfectas para mesas dulces, fiestas y celebraciones. Disponibles en distintos glaseados y toppings.",
+    "imagen": "recursos/imagenes/productos/donas.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Glaseado Chocolate",
+      "tags": "Chocolate • Sprinkles",
+      "precio": 3000,
+      "imagen": "recursos/imagenes/productos/donas/diseno-1.webp"
+    },
+    {
+      "nombre": "Glaseado Fresa",
+      "tags": "Fresa • Rosado",
+      "precio": 3000,
+      "imagen": "recursos/imagenes/productos/donas/diseno-2.webp"
+    },
+    {
+      "nombre": "Sprinkles de Colores",
+      "tags": "Colores • Fiesta",
+      "precio": 3000,
+      "imagen": "recursos/imagenes/productos/donas/diseno-3.webp"
+    },
+    {
+      "nombre": "Azúcar Canela",
+      "tags": "Canela • Azúcar",
+      "precio": 3000,
+      "imagen": "recursos/imagenes/productos/donas/diseno-4.webp"
+    },
+    {
+      "nombre": "Vainilla Clásica",
+      "tags": "Vainilla • Glaseado blanco",
+      "precio": 3000,
+      "imagen": "recursos/imagenes/productos/donas/diseno-5.webp"
+    },
+    {
+      "nombre": "Caramelo Salado",
+      "tags": "Caramelo • Sal marina",
+      "precio": 3000,
+      "imagen": "recursos/imagenes/productos/donas/diseno-6.webp"
+    },
+    {
+      "nombre": "Oreo Crunch",
+      "tags": "Oreo • Chocolate",
+      "precio": 3000,
+      "imagen": "recursos/imagenes/productos/donas/diseno-7.webp"
+    },
+    {
+      "nombre": "Coco Rallado",
+      "tags": "Coco • Blanco",
+      "precio": 3000,
+      "imagen": "recursos/imagenes/productos/donas/diseno-8.webp"
+    },
+    {
+      "nombre": "Torre de Donas",
+      "tags": "Torre • Mesa dulce",
+      "precio": 3000,
+      "imagen": "recursos/imagenes/productos/donas/diseno-9.webp"
+    }
+  ]
+}

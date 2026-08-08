@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Galletas Personalizadas",
+    "titulo": "Galletas decoradas para eventos únicos",
+    "descripcion": "Descubre nuestras galletas personalizadas, decoradas a mano o con impresión comestible. Ideales para eventos, detalles corporativos y celebraciones especiales.",
+    "imagen": "recursos/imagenes/productos/galletas.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Impresión Comestible",
+      "tags": "Full color • Nitidez",
+      "precio": 4500,
+      "imagen": "recursos/imagenes/productos/galletas/diseno-1.webp"
+    },
+    {
+      "nombre": "Iniciales Doradas",
+      "tags": "Iniciales • Dorado",
+      "precio": 4500,
+      "imagen": "recursos/imagenes/productos/galletas/diseno-2.webp"
+    },
+    {
+      "nombre": "Fondant Decorado",
+      "tags": "Fondant • Colores",
+      "precio": 4500,
+      "imagen": "recursos/imagenes/productos/galletas/diseno-3.webp"
+    },
+    {
+      "nombre": "Temática Infantil",
+      "tags": "Personajes • Colores",
+      "precio": 4500,
+      "imagen": "recursos/imagenes/productos/galletas/diseno-4.webp"
+    },
+    {
+      "nombre": "Mensaje Personalizado",
+      "tags": "Texto • Glaseado real",
+      "precio": 4500,
+      "imagen": "recursos/imagenes/productos/galletas/diseno-5.webp"
+    },
+    {
+      "nombre": "Glaseado Real",
+      "tags": "Royal icing • Detalles",
+      "precio": 4500,
+      "imagen": "recursos/imagenes/productos/galletas/diseno-6.webp"
+    },
+    {
+      "nombre": "Figuras 3D",
+      "tags": "Relieve • Fondant",
+      "precio": 4500,
+      "imagen": "recursos/imagenes/productos/galletas/diseno-7.webp"
+    },
+    {
+      "nombre": "Caja Regalo",
+      "tags": "Set • Empaque especial",
+      "precio": 4500,
+      "imagen": "recursos/imagenes/productos/galletas/diseno-8.webp"
+    },
+    {
+      "nombre": "Set Bautizo",
+      "tags": "Delicado • Pastel",
+      "precio": 4500,
+      "imagen": "recursos/imagenes/productos/galletas/diseno-9.webp"
+    }
+  ]
+}

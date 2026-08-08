@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Tortas de Cumpleaños",
+    "titulo": "Tortas que hacen inolvidable cada cumpleaños",
+    "descripcion": "Descubre una selección de tortas creadas para celebrar cada año nuevo de vida con color y alegría. Cada diseño puede personalizarse en colores, tamaño y decoración según tu celebración.",
+    "imagen": "recursos/imagenes/cumpleanos/hero.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Fiesta de Confeti",
+      "tags": "Confeti • Colores • Globos",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/cumpleanos/diseno-1.webp"
+    },
+    {
+      "nombre": "Buttercream Clásica",
+      "tags": "Buttercream • Pastel • Flores",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/cumpleanos/diseno-2.webp"
+    },
+    {
+      "nombre": "Drip de Chocolate",
+      "tags": "Chocolate • Drip • Dorado",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/cumpleanos/diseno-3.webp"
+    },
+    {
+      "nombre": "Number Cake",
+      "tags": "Número • Frutas • Crema",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/cumpleanos/diseno-4.webp"
+    },
+    {
+      "nombre": "Globos y Sorpresas",
+      "tags": "Globos • Colores • Confeti",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/cumpleanos/diseno-5.webp"
+    },
+    {
+      "nombre": "Rústica Frutal",
+      "tags": "Frutas frescas • Naked cake",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/cumpleanos/diseno-6.webp"
+    },
+    {
+      "nombre": "Cumpleaños Feliz",
+      "tags": "Letras • Topper • Pastel",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/cumpleanos/diseno-7.webp"
+    },
+    {
+      "nombre": "Estrella Dorada",
+      "tags": "Estrellas • Dorado • Blanco",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/cumpleanos/diseno-8.webp"
+    },
+    {
+      "nombre": "Arcoíris Divertido",
+      "tags": "Arcoíris • Colores • Nubes",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/cumpleanos/diseno-9.webp"
+    }
+  ]
+}

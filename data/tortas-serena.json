@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Tortas Serena",
+    "titulo": "Nuestra línea exclusiva de tortas artesanales",
+    "descripcion": "Descubre nuestra selección de tortas artesanales, elaboradas con ingredientes de la mejor calidad para cualquier celebración. Cada diseño puede personalizarse en sabor, tamaño y decoración.",
+    "imagen": "recursos/imagenes/productos/tortas-serena.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Naked Cake Frutal",
+      "tags": "Frutas frescas • Rústica",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/productos/tortas-serena/diseno-1.webp"
+    },
+    {
+      "nombre": "Buttercream Rosas",
+      "tags": "Rosas • Pastel • Elegante",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/productos/tortas-serena/diseno-2.webp"
+    },
+    {
+      "nombre": "Chocolate Deluxe",
+      "tags": "Chocolate • Ganache • Dorado",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/productos/tortas-serena/diseno-3.webp"
+    },
+    {
+      "nombre": "Red Velvet Clásica",
+      "tags": "Red velvet • Queso crema",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/productos/tortas-serena/diseno-4.webp"
+    },
+    {
+      "nombre": "Vainilla y Frutos Rojos",
+      "tags": "Vainilla • Frutos rojos",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/productos/tortas-serena/diseno-5.webp"
+    },
+    {
+      "nombre": "Drip Cake Caramelo",
+      "tags": "Drip • Caramelo • Crocante",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/productos/tortas-serena/diseno-6.webp"
+    },
+    {
+      "nombre": "Minimalista Blanca",
+      "tags": "Blanco • Líneas • Elegante",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/productos/tortas-serena/diseno-7.webp"
+    },
+    {
+      "nombre": "Doble Piso Elegante",
+      "tags": "Dos pisos • Flores • Perlas",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/productos/tortas-serena/diseno-8.webp"
+    },
+    {
+      "nombre": "Fresas y Crema",
+      "tags": "Fresas • Crema chantilly",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/productos/tortas-serena/diseno-9.webp"
+    }
+  ]
+}

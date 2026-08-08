@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Impresión Comestible",
+    "titulo": "Diseños impresos con la más alta calidad comestible",
+    "descripcion": "Descubre una selección de tortas con impresión comestible en papel de arroz u oblea. Cada diseño puede personalizarse con tu foto, logo o ilustración favorita según tu celebración.",
+    "imagen": "recursos/imagenes/comestible/hero.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Foto Personalizada",
+      "tags": "Papel de arroz • Full color",
+      "precio": 25000,
+      "imagen": "recursos/imagenes/comestible/diseno-1.webp"
+    },
+    {
+      "nombre": "Logo Corporativo",
+      "tags": "Marca • Nitidez • Oblea",
+      "precio": 25000,
+      "imagen": "recursos/imagenes/comestible/diseno-2.webp"
+    },
+    {
+      "nombre": "Personaje Favorito",
+      "tags": "Ilustración • Full color",
+      "precio": 25000,
+      "imagen": "recursos/imagenes/comestible/diseno-3.webp"
+    },
+    {
+      "nombre": "Fondo Temático",
+      "tags": "Escena • Papel de arroz",
+      "precio": 25000,
+      "imagen": "recursos/imagenes/comestible/diseno-4.webp"
+    },
+    {
+      "nombre": "Mensaje Especial",
+      "tags": "Texto • Tipografía • Color",
+      "precio": 25000,
+      "imagen": "recursos/imagenes/comestible/diseno-5.webp"
+    },
+    {
+      "nombre": "Ilustración a Color",
+      "tags": "Arte digital • Nitidez",
+      "precio": 25000,
+      "imagen": "recursos/imagenes/comestible/diseno-6.webp"
+    },
+    {
+      "nombre": "Collage de Recuerdos",
+      "tags": "Fotos múltiples • Oblea",
+      "precio": 25000,
+      "imagen": "recursos/imagenes/comestible/diseno-7.webp"
+    },
+    {
+      "nombre": "Diseño Infantil",
+      "tags": "Caricatura • Full color",
+      "precio": 25000,
+      "imagen": "recursos/imagenes/comestible/diseno-8.webp"
+    },
+    {
+      "nombre": "Arte Personalizado",
+      "tags": "Diseño a medida • HD",
+      "precio": 25000,
+      "imagen": "recursos/imagenes/comestible/diseno-9.webp"
+    }
+  ]
+}

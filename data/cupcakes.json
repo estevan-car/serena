@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Cupcakes",
+    "titulo": "Cupcakes deliciosos para cada celebración",
+    "descripcion": "Descubre nuestra variedad de cupcakes artesanales, ideales para mesas de postres, fiestas y regalos. Cada sabor y decoración puede personalizarse según tu evento.",
+    "imagen": "recursos/imagenes/productos/cupcakes.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Vainilla Clásico",
+      "tags": "Vainilla • Buttercream",
+      "precio": 8000,
+      "imagen": "recursos/imagenes/productos/cupcakes/diseno-1.webp"
+    },
+    {
+      "nombre": "Chocolate Intenso",
+      "tags": "Chocolate • Ganache",
+      "precio": 8000,
+      "imagen": "recursos/imagenes/productos/cupcakes/diseno-2.webp"
+    },
+    {
+      "nombre": "Red Velvet Mini",
+      "tags": "Red velvet • Queso crema",
+      "precio": 8000,
+      "imagen": "recursos/imagenes/productos/cupcakes/diseno-3.webp"
+    },
+    {
+      "nombre": "Limón y Merengue",
+      "tags": "Limón • Merengue tostado",
+      "precio": 8000,
+      "imagen": "recursos/imagenes/productos/cupcakes/diseno-4.webp"
+    },
+    {
+      "nombre": "Oreo Cookies",
+      "tags": "Oreo • Chocolate • Crema",
+      "precio": 8000,
+      "imagen": "recursos/imagenes/productos/cupcakes/diseno-5.webp"
+    },
+    {
+      "nombre": "Frutos Rojos",
+      "tags": "Frutos rojos • Crema",
+      "precio": 8000,
+      "imagen": "recursos/imagenes/productos/cupcakes/diseno-6.webp"
+    },
+    {
+      "nombre": "Caramelo Salado",
+      "tags": "Caramelo • Sal marina",
+      "precio": 8000,
+      "imagen": "recursos/imagenes/productos/cupcakes/diseno-7.webp"
+    },
+    {
+      "nombre": "Arcoíris Fiesta",
+      "tags": "Colores • Sprinkles",
+      "precio": 8000,
+      "imagen": "recursos/imagenes/productos/cupcakes/diseno-8.webp"
+    },
+    {
+      "nombre": "Flores de Buttercream",
+      "tags": "Buttercream • Flores",
+      "precio": 8000,
+      "imagen": "recursos/imagenes/productos/cupcakes/diseno-9.webp"
+    }
+  ]
+}

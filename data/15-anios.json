@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "etiqueta": "Tortas de 15 Años",
+    "titulo": "Diseños únicos para un momento inolvidable",
+    "descripcion": "Descubre una selección de tortas creadas para celebrar\n                        quince años con elegancia. Cada diseño puede\n                        personalizarse en colores, tamaño y decoración según\n                        tu celebración.",
+    "imagen": "recursos/imagenes/15-anos/hero.webp"
+  },
+  "disenos": [
+    {
+      "nombre": "Elegance Rose",
+      "tags": "Rosas • Dorado • Perlas",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/15-anos/diseno-1.webp"
+    },
+    {
+      "nombre": "Royal Blush",
+      "tags": "Rosado • Perlas • Encaje",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/15-anos/diseno-2.webp"
+    },
+    {
+      "nombre": "Golden Crown",
+      "tags": "Corona • Dorado • Blanco",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/15-anos/diseno-3.webp"
+    },
+    {
+      "nombre": "Vintage Chic",
+      "tags": "Encaje • Beige • Perlas",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/15-anos/diseno-4.webp"
+    },
+    {
+      "nombre": "Midnight Glam",
+      "tags": "Negro • Dorado • Brillos",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/15-anos/diseno-5.webp"
+    },
+    {
+      "nombre": "Floral Dream",
+      "tags": "Flores • Pastel • Blanco",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/15-anos/diseno-6.webp"
+    },
+    {
+      "nombre": "Diamond Sparkle",
+      "tags": "Brillos • Plateado • Blanco",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/15-anos/diseno-7.webp"
+    },
+    {
+      "nombre": "Pastel Garden",
+      "tags": "Flores • Menta • Rosado",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/15-anos/diseno-8.webp"
+    },
+    {
+      "nombre": "Classic Princess",
+      "tags": "Volantes • Rosado • Corona",
+      "precio": 150000,
+      "imagen": "recursos/imagenes/15-anos/diseno-9.webp"
+    }
+  ]
+}
