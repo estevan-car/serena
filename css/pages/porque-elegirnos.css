@@ -1,0 +1,50 @@
+/* ¿POR QUÉ ELEGIR SERENA? */
+
+.ventajas{
+    padding-block: var(--espacio-2xl);
+    background: linear-gradient(
+        180deg,
+        #fffdfb 0%,
+        #ffffff 100%
+    );
+}
+
+/* GRID */
+
+.grid-ventajas{
+    margin-top: 4rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+/* ICONO */
+
+.icono-ventaja{
+
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 1.8rem;
+
+    border-radius: 50%;
+
+    background: rgba(212, 175, 55, .10);
+
+    color: var(--color-principal);
+
+    font-size: 1.8rem;
+
+    transition:
+        transform var(--transicion),
+        background var(--transicion),
+        color var(--transicion);
+
+}
+

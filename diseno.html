@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Globales-->
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/tipografias.css">
+    <link rel="stylesheet" href="css/base/global.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Componentes -->
+    <link rel="stylesheet" href="css/components/botones.css">
+    <link rel="stylesheet" href="css/components/slider.css">
+    <link rel="stylesheet" href="css/components/tarjetas.css">
+    <link rel="stylesheet" href="css/components/whatsapp.css">
+
+    <link rel="stylesheet" href="css/layout/footer.css">
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--Css Principal-->
+
+    <link rel="stylesheet" href="css/tortas/diseno.css">
+
+
+    <title>Personaliza Tu Torta</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="navegacion contenedor" aria-label="Navegación principal">
+
+            <a href="index.html" class="logo">
+
+                <img src="recursos/imagenes/logosinfondo.webp" alt="Serena Repostería">
+
+            </a>
+
+            <ul class="menu-principal">
+
+                <li><a class="activo" href="#inicio">Inicio</a></li>
+
+                <li><a href="#especialidades">Nuestras especialidades</a></li>
+
+                <li><a href="#personalizados">Creaciones Personalizadas</a></li>
+                
+                <li><a href="#productos">Nuestros Productos</a></li>
+
+                <li><a href="#porque-serena">Nosotros</a></li>
+
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+            <ul class="acciones-header">
+
+                <li>
+                    
+                    <button class="boton-carrito" aria-label="Carrito">
+                        
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <circle cx="9" cy="21" r="1"></circle>
+
+                            <circle cx="20" cy="21" r="1"></circle>
+
+                            <path d="M2.05 2h2l2.66 12.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.69L22 6H6"></path>
+
+                        </svg>
+
+                        <span class="contador-carrito" aria-live="polite">0</span>
+
+                    </button>
+
+                </li>
+
+                <li class="menu-movil">
+
+                    <button class="boton-menu" aria-label="Abrir menú">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+
+                        </svg>
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero-diseno">
+
+            <article class="contenedor">
+
+                <span class="categoria">
+
+                    Torta para quince años
+
+                </span>
+
+                <h1>
+
+                    Elegance Rose
+
+                </h1>
+
+                <p>
+
+                    Cada una de nuestras tortas es elaborada artesanalmente y
+                    puede personalizarse completamente para adaptarse a tu
+                    celebración.
+
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section class="personalizador">
+
+            <article class="contenedor contenido-personalizador">
+
+                <section class="galeria-diseno">
+
+                    <figure class="imagen-principal">
+
+                        <img src="recursos/imagenes/15-anos/elegance-rose.webp" alt="Elegance Rose">
+
+                    </figure>
+
+                    <section class="miniaturas">
+
+                        <figure class="activa">
+
+                            <img src="recursos/imagenes/15-anos/elegance-rose.webp" alt="Vista 1">
+
+                        </figure>
+
+                        <figure>
+
+                            <img src="recursos/imagenes/15-anos/elegance-rose-2.webp" alt="Vista 2">
+
+                        </figure>
+
+                        <figure>
+
+                            <img src="recursos/imagenes/15-anos/elegance-rose-3.webp" alt="Vista 3">
+
+                        </figure>
+
+                    </section>
+
+                </section>
+
+                <section class="configurador">
+
+                    <h2>
+
+                        ✨ Personaliza tu torta
+
+                    </h2>
+
+                    <p>
+
+                        Personaliza cada detalle de tu torta y nosotros nos
+                        encargaremos de hacer realidad tu idea.
+
+                    </p>
+
+                    <!--Personas-->
+
+                    <article class="grupo">
+
+                        <h3> 👥 ¿Para cuántas personas? </h3>
+
+                        <section class="opciones-personas">
+
+                            <button type="button">10</button>
+
+                            <button type="button">15</button>
+
+                            <button type="button">20</button>
+
+                            <button type="button">30</button>
+
+                            <button type="button">40</button>
+
+                            <button type="button">50+</button>
+
+                        </section>
+
+                    </article>
+
+                    <!-- Sabores -->
+
+                    <article class="grupo">
+
+                        <h3> 🍰 Sabor </h3>
+
+                        <select>
+
+                            <option selected disabled> Selecciona un sabor </option>
+
+                            <option>Chocolate</option>
+
+                            <option>Vainilla</option>
+
+                            <option>Red Velvet</option>
+
+                            <option>Limón</option>
+
+                        </select>
+
+                    </article>
+
+                    <!-- Rellenos -->
+
+                    <article class="grupo">
+
+                        <h3>🥛 Relleno </h3>
+
+                        <select>
+
+                            <option selected disabled>  Selecciona un relleno </option>
+
+                            <option>Arequipe</option>
+
+                            <option>Oreo</option>
+
+                            <option>Ganache</option>
+
+                            <option>Frutos rojos</option>
+
+                        </select>
+
+                    </article>
+
+                    <!-- Colores -->
+
+                    <article class="grupo">
+
+                        <h3> 🎨 Colores principales </h3>
+
+                        <section class="colores">
+
+                            <button class="color blanco"></button>
+
+                            <button class="color rosa"></button>
+
+                            <button class="color dorado"></button>
+
+                            <button class="color azul"></button>
+
+                            <button class="color lila"></button>
+
+                            <button class="color verde"></button>
+
+                            <button class="color negro"></button>
+
+                            <button class="color cafe"></button>
+
+                        </section>
+
+                    </article>
+
+                    <!-- Mensaje -->
+
+                    <article class="grupo">
+
+                        <h3> ✍️ Mensaje para la torta </h3>
+
+                        <input type="text" placeholder="Ej: Feliz cumpleaños Sofía">
+
+                    </article>
+
+                    <!-- Comentarios -->
+
+                    <article class="grupo">
+
+                        <h3> 💬 Cuéntanos más sobre tu idea </h3>
+
+                        <textarea rows="5" placeholder="Describe aquí cualquier detalle especial..."></textarea>
+
+                    </article>
+
+                    <!-- Imagen -->
+
+                    <article class="grupo">
+
+                        <h3> 💖 Inspíranos  </h3>
+
+                        <p>
+
+                            ¿Tienes una imagen de referencia? Compártela con
+                            nosotros y la utilizaremos como inspiración para crear
+                            una torta única para tu celebración.
+
+                        </p>
+
+                        <label class="subir-imagen">
+
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                            <span>Haz clic aquí para subir tu imagen</span>
+
+                            <div class="preview-imagen">
+
+                                <img id="vistaPrevia" src="" alt="Vista previa">
+
+                            </div>
+
+                            <input type="file" hidden>
+
+                        </label>
+
+                    </article>
+
+                    <!-- Nota -->
+
+                    <article class="nota-personalizacion">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <p>
+
+                            Todas nuestras tortas son elaboradas artesanalmente.
+                            Revisaremos tu solicitud y nos pondremos en contacto
+                            contigo para confirmar cada detalle antes de iniciar su
+                            elaboración.
+
+                        </p>
+
+                    </article>
+
+                    <!-- Botón -->
+
+                    <a href="#" id="btnCrearPedido" class="boton-principal">
+
+                        📲 Enviar mi cotización
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </section>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <section class="modal-confirmacion" id="modalConfirmacion">
+
+        <article class="contenido-modal">
+
+            <button class="cerrar-modal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+            <span class="etiqueta-modal">
+
+                Serena Repostería
+
+            </span>
+
+            <h2>
+
+                ✨ Revisa tu solicitud
+
+            </h2>
+
+            <p>
+
+                Antes de enviarla por WhatsApp verifica que toda la información sea correcta.
+
+            </p>
+
+            <section class="resumen-pedido">
+
+                <article>
+
+                    <span>🎂 Diseño</span>
+
+                    <strong id="resumenDiseno"></strong>
+
+                </article>
+
+                <article>
+
+                    <span>👥 Personas</span>
+
+                    <strong id="resumenPersonas"></strong>
+
+                </article>
+
+                <article>
+
+                    <span>🍰 Sabor</span>
+
+                    <strong id="resumenSabor"></strong>
+
+                </article>
+
+                <article>
+
+                    <span>🥛 Relleno</span>
+
+                    <strong id="resumenRelleno"></strong>
+
+                </article>
+
+                <article>
+
+                    <span>🎨 Color</span>
+
+                    <strong id="resumenColor"></strong>
+
+                </article>
+
+                <article>
+
+                    <span>✍ Mensaje</span>
+
+                    <strong id="resumenMensaje"></strong>
+
+                </article>
+
+            </section>
+
+            <section class="acciones-modal">
+
+                <button class="editar">
+
+                    Seguir editando
+
+                </button>
+
+                <button class="enviar-whatsapp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Enviar por WhatsApp
+
+                </button>
+
+            </section>
+
+        </article>
+
+    </section>
+
+    <footer class="footer">
+
+        <article class="contenedor">
+
+            <section class="contenido-footer">
+
+                <!-- MARCA -->
+
+                <article class="marca-footer">
+
+                    <a href="#inicio" class="logo-footer">
+
+                        <img src="recursos/imagenes/logosinfondo.webp"alt="Serena">
+
+                    </a>
+
+                    <p>
+
+                        Endulzando los momentos más especiales con
+                        creaciones artesanales hechas con pasión,
+                        creatividad y mucho amor.
+
+                    </p>
+
+                    <nav class="redes-footer">
+
+                        <a href="https://www.instagram.com/serenapastel/" aria-label="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20cotizar%20una%20torta%20con%20ustedes." aria-label="WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+                    </nav>
+
+                </article>
+
+                <!-- NAVEGACIÓN -->
+
+                <article>
+
+                    <h3>Navegación</h3>
+
+                    <nav class="menu-footer">
+
+                        <a class="activo" href="#inicio">Inicio</a>
+
+                        <a href="#especialidades">Nuestras especialidades</a>
+
+                        <a href="#personalizados">Creaciones Personalizadas</a>
+                        
+                        <a href="#productos">Nuestros Productos</a></li>
+
+                        <a href="#porque-serena">Nosotros</a></li>
+
+                        <a href="#contacto">Contacto</a></li>
+
+                    </nav>
+
+                </article>
+
+                <!-- CONTACTO -->
+
+                <article>
+
+                    <h3>Contacto</h3>
+
+                    <nav class="menu-footer">
+
+                        <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20cotizar%20una%20torta%20con%20ustedes." target="_blank" >WhatsApp</a>
+
+                        <a href="https://www.instagram.com/serenapastel/">Instagram</a>
+
+                        <a href="#">serenapanypastel@gmail.com</a>
+
+                        <a href="https://share.google/yBrGTDFLtnjVMuj3e">Rionegro, Antioquia</a>
+
+                    </nav>
+
+                </article>
+
+            </section>
+
+            <section class="footer-inferior">
+
+                <p>
+
+                    © 2026 Serena Pastelería Artesanal.
+                    Todos los derechos reservados.
+
+                </p>
+
+                <p>
+
+                    Diseñado y desarrollado por
+
+                    <a href="https://www.instagram.com/vertriss.co/">
+
+                        VERTRISS
+
+                    </a>
+
+                </p>
+
+            </section>
+
+        </article>
+
+    </footer>
+
+    <aside class="mensaje-whatsapp">
+
+        <article class="contenido-mensaje">
+
+            <figure class="mensaje-logo">
+
+                <img src="recursos/imagenes/logosinfondo.webp"alt="Serena">
+
+            </figure>
+
+            <section class="texto-mensaje">
+
+                <h4>SERENA</h4>
+
+                <p>
+
+                    Hablemos de tu próxima celebración. ✨
+
+                </p>
+
+            </section>
+
+        </article>
+
+    </aside>
+
+    <a
+        href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20cotizar%20una%20torta%20personalizada."
+        class="whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <!-- PANTALLA DE CARGA -->
+
+    <section class="cargando-whatsapp" id="cargandoWhatsapp">
+
+        <article>
+
+            <span class="loader"></span>
+
+            <h3>Preparando tu solicitud...</h3>
+
+            <p>
+
+                Estamos organizando toda la información de tu pedido.
+
+            </p>
+
+        </article>
+
+    </section>
+
+    <script src="js/whatsapp.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/diseno.js"></script>
+
+</body>
+</html>

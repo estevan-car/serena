@@ -1,0 +1,74 @@
+:root {
+
+    /* Colores principales */
+
+    --color-superficie: #FFF8F5;
+
+    --color-principal: #00B3B7;
+    --color-secundario: #FFBF94;
+    --color-acento: #ff846c;
+    --color-principal-oscuro: #009B9B;
+
+    --color-blanco: #FFFFFF;
+    --color-fondo: #F8FAFC;
+
+    --texto-principal: #2B2B2B;
+    --texto-secundario: #6B7280;
+
+    --color-borde: #E5E7EB;
+
+
+    /* Tipografía */
+
+    --fuente-titulos: "Soligant", serif;
+    --fuente-textos: "FS Lucas Pro", sans-serif;
+
+
+    /* TAMAÑOS DE FUENTE */
+
+    --texto-xs: 0.875rem;   /* 14px */
+    --texto-sm: 1rem;       /* 16px */
+    --texto-md: 1.125rem;   /* 18px */
+    --texto-lg: 1.25rem;    /* 20px */
+    --texto-xl: 1.5rem;     /* 24px */
+    --texto-2xl: 2rem;      /* 32px */
+    --texto-3xl: 3rem;      /* 48px */
+    --texto-4xl: 4rem;      /* 64px */
+
+
+    /* Espaciado */
+
+    --espacio-xs:.5rem;
+    --espacio-sm:1rem;
+    --espacio-md:1.5rem;
+    --espacio-lg:2rem;
+    --espacio-xl:3rem;
+    --espacio-2xl:5rem;
+
+
+    /* Bordes */
+
+    --radio-sm: .5rem;
+    --radio-md: 1rem;
+    --radio-lg: 1.5rem;
+    --radio-xl: 2rem;
+    --radio-full: 999px;
+
+
+    /* sombras */
+
+    --sombra-suave: 0 10px 30px rgba(0,0,0,0.08);
+    --sombra-media: 0 15px 40px rgba(0,0,0,.12);
+
+
+    /* Transiciones */
+
+    --transicion: all .3s ease;
+
+
+
+    /* CONTENEDOR */
+
+    --ancho-contenedor: 1280px;
+
+}

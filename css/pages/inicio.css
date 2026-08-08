@@ -1,0 +1,123 @@
+/* INICIO */
+
+.hero{
+    padding-top: 1rem;
+    padding-bottom: var(--espacio-2xl);
+}
+
+.hero-contenedor{
+    display:grid;
+    grid-template-columns: 1.15fr .85fr;
+    align-items:center;
+    gap:2.5rem;
+    min-height:calc(100vh - 140px);
+}
+
+.especialidades{
+    background-color: var(--color-superficie);
+}
+
+/* ACCIONES */
+
+.acciones-hero {
+    display: flex;
+    align-items: center;
+    gap: var(--espacio-md);
+    margin-top: var(--espacio-sm);
+}
+
+/* CONTENIDO */
+
+.contenido-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--espacio-lg);
+}
+
+/* ETIQUETA */
+
+.etiqueta-hero{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+    padding:.55rem 1.2rem;
+    margin-bottom:1rem;
+    font-size:.8rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--color-principal);
+    background:rgba(0,179,183,.08);
+    border-radius:var(--radio-full);
+
+}
+
+/* TÍTULO */
+
+.hero .titulo-principal{
+    max-width:13ch;
+    font-size:clamp(3rem,5vw,5rem);
+    line-height:.95;
+    letter-spacing:-.03em;
+}
+
+/* TEXTO */
+
+.texto-hero{
+    max-width:34rem;
+    margin-top:.5rem;
+    font-size:1.15rem;
+    line-height:1.8;
+}
+
+/* BENEFICIOS */
+
+.beneficios-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-md);
+}
+
+.beneficios-hero p {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: var(--texto-sm);
+    font-weight: 500;
+    color: var(--texto-principal);
+}
+
+/* IMAGEN HERO */
+
+.imagen-hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-hero::before{
+    content: "";
+    position: absolute;
+    width: 36rem;
+    height: 36rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,191,148,.28);
+    border-radius: 58% 42% 65% 35% / 42% 58% 42% 58%;
+    z-index: 1;
+}
+
+.imagen-hero img{
+    position: relative;
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 2rem;
+    z-index: 2;
+    object-fit: cover;
+    filter: drop-shadow(0 35px 60px rgba(0,0,0,.18));
+    animation: flotar 5s ease-in-out infinite;
+}
+

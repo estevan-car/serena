@@ -1,0 +1,61 @@
+/* FLOTAR */
+
+@keyframes flotar {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+/* ANIMACIÓN ENTRADA WHATSAPP */
+
+.whatsapp::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:50%;
+    background:#25D366;
+    z-index:-1;
+    animation:pulsoWhatsapp 2s infinite;
+}
+
+
+
+@keyframes pulsoWhatsapp{
+    0%{
+        transform:scale(1);
+        opacity:.5;
+    }
+    70%{
+        transform:scale(1.5);
+        opacity:0;
+    }
+
+    100%{
+        opacity:0;
+    }
+}
+
+/* CATALOGO */
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:scale(.94);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}

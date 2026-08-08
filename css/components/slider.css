@@ -1,0 +1,134 @@
+/* INICIO SLIDER */
+
+.hero-slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 34rem;
+    margin-inline: auto;
+}
+
+.hero-imagen{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition:  opacity .8s ease, visibility .8s ease;
+}
+
+.hero-imagen.activa{
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+.hero-imagen img{
+    width: 100%;
+    display: block;
+    border-radius: var(--radio-lg);
+    object-fit: cover;
+    box-shadow: 0 30px 70px rgba(0,0,0,.15);
+}
+
+.hero-slider::before{
+    content:"";
+    position:absolute;
+    width:110%;
+    aspect-ratio:1;
+    background:rgba(255,191,148,.25);
+    border-radius:58% 42% 65% 35% / 42% 58% 42% 58%;
+    z-index:1;
+}
+
+/* CONTROLES SLIDER */
+
+.slider-anterior,
+.slider-siguiente{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radio-full);
+    color: var(--texto-principal);
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transicion), transform var(--transicion), background-color var(--transicion);
+    z-index: 5;
+}
+
+.slider-anterior{
+    left: 1rem;
+}
+
+.slider-siguiente{
+    right: 1rem;
+}
+
+.hero-slider:hover .slider-anterior,
+.hero-slider:hover .slider-siguiente{
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider-anterior:hover,
+.slider-siguiente:hover{
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+.slider-anterior svg,
+.slider-siguiente svg{
+    width: 20px;
+    height: 20px;
+}
+
+/* INDICADORES */
+
+.indicadores-slider{
+    position:absolute;
+    left:50%;
+    bottom:-2.5rem;
+    transform:translateX(-50%);
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+    z-index:10;
+}
+
+.indicadores-slider button{
+    width:.8rem;
+    height:.8rem;
+    border-radius:50%;
+    background:#d7d7d7;
+    transition:var(--transicion);
+}
+
+.indicadores-slider .activo{
+    width:2rem;
+    border-radius:999px;
+    background:var(--color-principal);
+}
+
+/* SLIDER  TESTIMONIOS */
+
+.slider-testimonios{
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+.track-testimonios{
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    transition: transform .7s ease;
+}

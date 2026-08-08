@@ -1,0 +1,69 @@
+/* FUENTES LOCALES */
+
+/*
+@font-face {
+    font-family: "Soligant";
+    src: url("../../assets/fonts/Soligant-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FS Lucas Pro";
+    src: url("../../assets/fonts/FSLucasPro-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+
+
+/* BODY */
+
+body{
+    font-family: var(--fuente-texto);
+    font-size: var(--texto-sm);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--texto-principal);
+    background-color: var(--color-blanco);
+}
+
+
+/* TÍTULOS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--fuente-titulos);
+    font-weight: 400;
+    color: var(--texto-principal);
+    line-height: 1.2;
+}
+
+
+/* PÁRRAFOS */
+
+p{
+    font-weight: 400;
+    color: var(--texto-secundario);
+    line-height: 1.7;
+}
+
+
+/* ENLACES */
+
+a{
+    font-family: var(--fuente-texto);
+    transition: var(--transicion);
+}
+
+
+/* BOTONES */
+
+button{
+    font-family: var(--fuente-texto);
+    transition: var(--transicion);
+}

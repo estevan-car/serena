@@ -1,0 +1,256 @@
+/* CARD */
+
+.tarjeta-especialidad{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    height: 100%;
+    background-color:var(--color-blanco);
+    border-radius:var(--radio-lg);
+    box-shadow:var(--sombra-suave);
+    transition: transform var(--transicion), box-shadow var(--transicion);
+}
+
+/* IMAGEN */
+
+.tarjeta-especialidad figure{
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background-color: #f8f8f8;
+}
+
+.tarjeta-especialidad img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .6s ease;
+}
+
+.tarjeta-especialidad h3{
+    margin-top: var(--espacio-lg);
+    margin-bottom: .75rem;
+    padding-inline: var(--espacio-lg);
+}
+
+.tarjeta-especialidad p{
+    margin-top:var(--espacio-sm);
+    padding-inline:var(--espacio-lg);
+    color:var(--texto-secundario);
+    line-height:1.7;
+    padding-inline: var(--espacio-lg);
+    margin-bottom: var(--espacio-lg);
+}
+
+.tarjeta-especialidad a{
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: auto;
+    padding: var(--espacio-lg);
+    font-weight: 600;
+    color: var(--color-principal);
+    transition: color var(--transicion);
+}
+
+.tarjeta-especialidad a:hover{
+    color: var(--color-acento);
+}
+
+/* HOVER */
+
+.tarjeta-especialidad:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--sombra-media);
+}
+
+.tarjeta-especialidad:hover img{
+    transform:scale(1.08);
+}
+
+.tarjeta-especialidad a{
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+}
+
+.tarjeta-especialidad span{
+    transition:transform .3s ease;
+}
+
+.tarjeta-especialidad:hover span{
+    transform:translateX(6px);
+}
+
+.grid-especialidades{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+    margin-top:4rem;
+}
+
+/* TARJETA PRODUCTOS */
+
+.producto{
+    overflow:hidden;
+    background:var(--color-blanco);
+    border-radius:28px;
+    box-shadow:var(--sombra-suave);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.producto:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+/* TARJETA PORQUE SERENA */
+
+.beneficio{
+    display:flex;
+    align-items:flex-start;
+    gap:1rem;
+    padding:1.5rem;
+    background:var(--color-blanco);
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/* testimonios */
+.tarjeta-testimonio{
+    min-width: 360px;
+    padding: 2rem;
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 28px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.08);
+    transition:
+        transform .45s ease,
+        opacity .45s ease,
+        box-shadow .45s ease;
+    opacity: .65;
+    transform: scale(.92);
+}
+
+/* TARJETA ACTIVA */
+
+.tarjeta-testimonio.activa{
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 30px 70px rgba(0,0,0,.12);
+}
+
+/* PORQUE ELEGIRNOS */
+
+.tarjeta-ventaja{
+    position: relative;
+    padding: 2.5rem 2rem;
+    background: var(--color-blanco);
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: var(--radio-xl);
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    transition:
+        transform var(--transicion),
+        box-shadow var(--transicion);
+
+}
+
+/* Línea superior */
+
+.tarjeta-ventaja::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--color-principal),
+        var(--color-secundario)
+    );
+    transition: width .45s ease;
+}
+
+.tarjeta-ventaja:hover{
+    transform: translateY(-10px);
+    box-shadow: var(--sombra-media);
+}
+
+.tarjeta-ventaja:hover::before{
+    width: 100%;
+}
+
+.tarjeta-ventaja:hover .icono-ventaja{
+    transform: rotate(8deg) scale(1.08);
+    background: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+/* TITULO */
+
+.tarjeta-ventaja h3{
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+    color: var(--texto-principal);
+}
+
+/* TEXTO */
+
+.tarjeta-ventaja p{
+    color: var(--texto-secundario);
+    line-height: 1.8;
+}
+
+/*Tarjeta conctato cta*/
+
+.card-cta{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 480px;
+    padding: 3rem;
+    background: rgba(255,255,255,.96);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.45);
+    border-radius: var(--radio-xl);
+    box-shadow: 0 25px 70px rgba(0,0,0,.15);
+    transition:
+        transform var(--transicion),
+        box-shadow var(--transicion);
+}
+
+.contenido-cta:hover .card-cta{
+    transform: translateY(calc(-50% - 10px));
+    box-shadow: 0 35px 90px rgba(0,0,0,.20);
+}
+
+.card-cta h2{
+    margin: 1rem 0;
+    font-size: clamp(2rem,4vw,2.8rem);
+    line-height: 1.2;
+    color: var(--texto-principal);
+}
+
+.card-cta p{
+    color: var(--texto-secundario);
+    line-height: 1.8;
+}
+
+/* TARJETA CATALOGO */
+
+.diseno{
+    transition: .35s ease;
+}
+.diseno:hover{
+    transform: translateY(-8px);
+}

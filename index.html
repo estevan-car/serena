@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/tipografias.css">
+    <link rel="stylesheet" href="css/base/global.css">
+
+    <!-- Layout -->
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+
+    <!-- Componentes -->
+    <link rel="stylesheet" href="css/components/botones.css">
+    <link rel="stylesheet" href="css/components/slider.css">
+    <link rel="stylesheet" href="css/components/tarjetas.css">
+    <link rel="stylesheet" href="css/components/whatsapp.css">
+
+    <!-- Animaciones -->
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- paginas -->
+
+    <link rel="stylesheet" href="css/pages/inicio.css">
+    <link rel="stylesheet" href="css/pages/personalizados.css">
+    <link rel="stylesheet" href="css/pages/productos.css">
+    <link rel="stylesheet" href="css/pages/porque-serena.css">
+    <link rel="stylesheet" href="css/pages/testimonios.css">
+    <link rel="stylesheet" href="css/pages/porque-elegirnos.css">
+    <link rel="stylesheet" href="css/pages/contacto.css">
+
+    <!-- Responsive -->
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Serena Pastel</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        <nav class="navegacion contenedor" aria-label="Navegación principal">
+
+            <a href="index.html" class="logo">
+
+                <img
+                    src="recursos/imagenes/logosinfondo.webp"
+                    alt="Serena Repostería">
+
+            </a>
+
+            <ul class="menu-principal">
+
+                <li><a class="activo" href="#inicio">Inicio</a></li>
+
+                <li><a href="#especialidades">Nuestras especialidades</a></li>
+
+                <li><a href="#personalizados">Creaciones Personalizadas</a></li>
+                
+                <li><a href="#productos">Nuestros Productos</a></li>
+
+                <li><a href="#porque-serena">Nosotros</a></li>
+
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+            <ul class="acciones-header">
+
+                <li>
+                    
+                    <button class="boton-carrito" aria-label="Carrito">
+                        
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <circle cx="9" cy="21" r="1"></circle>
+
+                            <circle cx="20" cy="21" r="1"></circle>
+
+                            <path d="M2.05 2h2l2.66 12.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.69L22 6H6"></path>
+
+                        </svg>
+
+                        <span class="contador-carrito" aria-live="polite">0</span>
+
+                    </button>
+
+                </li>
+
+                <li class="menu-movil">
+
+                    <button class="boton-menu" aria-label="Abrir menú">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+
+                        </svg>
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <article class="contenedor hero-contenedor">
+
+                <section class="contenido-hero">
+
+                    <p class="etiqueta-hero">
+                        Repostería artesanal • Tortas personalizadas
+                    </p>
+
+                    <h1 class="titulo-principal">
+                        Creamos la torta perfecta para tus momentos más especiales.
+                    </h1>
+
+                    <p class="texto-hero">
+                        Diseñamos tortas únicas para cumpleaños, matrimonios, bautizos,
+                        aniversarios y cualquier celebración especial, elaboradas
+                        artesanalmente con ingredientes de la mejor calidad.
+                    </p>
+
+                    <nav class="acciones-hero" aria-label="Acciones principales">
+
+                        <a href="#especialidades" class="boton boton-principal">
+
+                            Explorar catálogo
+
+                        </a>
+
+                        <a href="#contacto" class="boton boton-secundario">
+
+                            Cotizar mi torta
+
+                        </a>
+
+                    </nav>
+
+                    <section class="beneficios-hero">
+
+                        <p> ✨ Personalización 100% </p>
+
+                        <p> 🎂 Ingredientes premium </p>
+
+                        <p> 🚚 Entregas programadas </p>
+
+                    </section>
+
+                </section>
+
+                <figure class="hero-slider">
+
+                    <picture class="hero-imagen activa">
+                        <img src="recursos/imagenes/torta-principal.webp" alt="Torta personalizada Serena 1">
+                    </picture>
+
+                    <picture class="hero-imagen">
+                        <img src="recursos/imagenes/torta2.webp" alt="Torta personalizada Serena 2">
+                    </picture>
+
+                    <picture class="hero-imagen">
+                        <img src="recursos/imagenes/torta3.webp" alt="Torta personalizada Serena 3">
+                    </picture>
+
+                    <picture class="hero-imagen">
+                        <img src="recursos/imagenes/torta4.webp" alt="Torta personalizada Serena 4">
+                    </picture>
+
+                    <picture class="hero-imagen">
+                        <img src="recursos/imagenes/torta5.webp" alt="Torta personalizada Serena 5">
+                    </picture>
+
+                    <picture class="hero-imagen">
+                        <img src="recursos/imagenes/torta6.webp" alt="Torta personalizada Serena 6">
+                    </picture>
+
+                    <button class="slider-anterior" aria-label="Imagen anterior">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <path d="m15 18-6-6 6-6"></path>
+                        </svg>
+
+                    </button>
+
+                    <button class="slider-siguiente" aria-label="Imagen siguiente">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+
+                    </button>
+
+                    <nav
+                        class="indicadores-slider"
+                        aria-label="Indicadores del carrusel">
+
+                        <button class="activo" aria-label="Imagen 1"></button>
+                        <button aria-label="Imagen 2"></button>
+                        <button aria-label="Imagen 3"></button>
+                        <button aria-label="Imagen 4"></button>
+                        <button aria-label="Imagen 5"></button>
+                        <button aria-label="Imagen 6"></button>
+
+                    </nav>
+
+                </figure>
+
+            </article>
+
+        </section>
+        
+
+        <section class="especialidades seccion" id="especialidades">
+
+            <article class="contenedor">
+
+                <header class="encabezado-seccion centrado">
+
+                    <p class="etiqueta-seccion">
+                        Nuestras especialidades
+                    </p>
+
+                    <h2 class="titulo-seccion">
+                        Creamos momentos dulces para cada ocasión.
+                    </h2>
+
+                    <p class="texto-seccion">
+                        Cada creación es elaborada artesanalmente con dedicación,
+                        creatividad y los mejores ingredientes para hacer de cada
+                        celebración un recuerdo inolvidable.
+                    </p>
+
+                </header>
+
+                <section class="grid-especialidades">
+
+                    <!-- Tarjeta 1 -->
+
+                    <article class="tarjeta-especialidad">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/especialidades/tortas-tematicas.webp" alt="Tortas temáticas">
+
+                        </figure>
+
+                        <h3>Tortas temáticas</h3>
+
+                        <p> Diseños personalizados inspirados en cualquier idea o personaje.</p>
+
+                        <a href="tematicas.html"> 
+                            
+                            Ver diseños 
+
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+
+                    <article class="tarjeta-especialidad">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/especialidades/15-anos.webp" alt="Tortas para quince años">
+
+                        </figure>
+
+                        <h3>15 años</h3>
+
+                        <p> Tortas elegantes para celebrar uno de los momentos más especiales.</p>
+
+                        <a href="15-anios.html"> 
+                            
+                            Ver diseños 
+
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+
+                    <article class="tarjeta-especialidad">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/especialidades/sacramentos.webp" alt="Tortas para sacramentos">
+
+                        </figure>
+
+                        <h3>Sacramentos</h3>
+
+                        <p> Diseños delicados para bautizos, primeras comuniones y confirmaciones. </p>
+
+                        <a href="sacramentos.html"> 
+                            
+                            Ver diseños 
+
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+                    <!-- Tarjeta 4 -->
+
+                    <article class="tarjeta-especialidad">
+
+                        <figure>
+
+                            <img
+                                src="recursos/imagenes/especialidades/impresion-comestible.webp"
+                                alt="Apliques en impresión comestible">
+
+                        </figure>
+
+                        <h3>Impresión comestible</h3>
+
+                        <p> Apliques personalizados con impresión de alta calidad sobre papel comestible.</p>
+
+                        <a href="comestible.html"> 
+                            
+                            Ver diseños 
+
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+                    <!-- Tarjeta 5 -->
+
+                    <article class="tarjeta-especialidad">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/especialidades/cumpleanos.webp" alt="Tortas de cumpleaños">
+
+                        </figure>
+
+                        <h3>Cumpleaños</h3>
+
+                        <p> Tortas únicas para sorprender y celebrar junto a quienes más quieres. </p>
+
+                        <a href="cumpleaños.html"> 
+                            
+                            Ver diseños 
+
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+                    <!-- Tarjeta 6 -->
+
+                    <article class="tarjeta-especialidad">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/especialidades/grados.webp" alt="Tortas para grados">
+
+                        </figure>
+
+                        <h3>Grados</h3>
+
+                        <p> Celebra cada logro con una torta diseñada especialmente para la ocasión. </p>
+
+                        <a href="grados.html"> 
+
+                            Ver diseños 
+
+                            <span>→</span>
+                        </a>
+
+                    </article>
+
+                </section>
+
+            </article>
+
+        </section>
+
+
+        <section class="personalizados" id="personalizados">
+
+            <article class="contenedor">
+
+                <header class="encabezado-seccion">
+
+                    <p class="etiqueta-seccion">
+                        Personaliza tu torta
+                    </p>
+
+                    <h2 class="titulo-seccion">
+                        Diseñamos una torta tan única como tu celebración.
+                    </h2>
+
+                    <p class="texto-seccion">
+                        Cuéntanos tu idea y nosotros nos encargaremos de convertirla en una
+                        creación especial, cuidando cada detalle para sorprender a tus invitados.
+                    </p>
+
+                </header>
+
+                <section class="contenido-personalizados">
+
+                    <figure class="imagen-personalizados">
+
+                        <img src="recursos/imagenes/creatutorta.webp" alt="Proceso de diseño de una torta personalizada">
+
+                    </figure>
+
+                    <article class="proceso-personalizado">
+
+                        <article class="paso">
+
+                            <span class="numero-paso">01</span>
+
+                            <section>
+
+                                <h3>Cuéntanos tu idea</h3>
+
+                                <p>
+                                    Envíanos una fotografía de referencia o descríbenos cómo imaginas tu torta.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                        <article class="paso">
+
+                            <span class="numero-paso">02</span>
+
+                            <section>
+
+                                <h3>Elige el sabor</h3>
+
+                                <p>
+                                    Escoge el sabor, relleno, tamaño y cantidad de porciones que deseas.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                        <article class="paso">
+
+                            <span class="numero-paso">03</span>
+
+                            <section>
+
+                                <h3>Diseñamos tu propuesta</h3>
+
+                                <p>
+                                    Creamos un diseño personalizado para que tu celebración sea inolvidable.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                        <article class="paso">
+
+                            <span class="numero-paso">04</span>
+
+                            <section>
+
+                                <h3>Disfruta tu celebración</h3>
+
+                                <p>
+                                    Recibe una torta elaborada artesanalmente con ingredientes de excelente calidad.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                        <a href="personalizar.html" class="boton-personalizar">
+
+                            Quiero personalizar mi torta
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <path d="M5 12h14"/>
+                                <path d="M13 5l7 7-7 7"/>
+
+                            </svg>
+                        </a>
+
+                    </article>
+
+                </section>
+
+            </article>
+
+        </section>
+
+
+        <section class="otros-productos" id="productos">
+
+            <article class="contenedor">
+
+                <header class="encabezado-seccion">
+
+                    <p class="etiqueta-seccion">
+                        Nuestros productos
+                    </p>
+
+                    <h2 class="titulo-seccion">
+                        Más dulces para celebrar cada momento.
+                    </h2>
+
+                    <p class="texto-seccion">
+                        Descubre una variedad de productos artesanales elaborados con ingredientes
+                        de calidad y el mismo cariño que caracteriza cada creación de Serena.
+                    </p>
+
+                </header>
+
+                <section class="grid-productos">
+
+                    <!-- TORTAS -->
+
+                    <article class="producto">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/productos/tortas-serena.webp" alt="Tortas Serena">
+
+                        </figure>
+
+                        <section class="contenido-producto">
+
+                            <h3>Tortas Serena</h3>
+
+                            <p>
+                                Nuestra línea exclusiva de tortas artesanales para cualquier celebración.
+                            </p>
+
+                            <a href="#"> Descubrir <span>→</span></a>
+
+                        </section>
+
+                    </article>
+
+                    <!-- CUPCAKES -->
+
+                    <article class="producto">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/productos/cupcakes.webp" alt="Cupcakes">
+
+                        </figure>
+
+                        <section class="contenido-producto">
+
+                            <h3>Cupcakes</h3>
+
+                            <p>
+                                Deliciosos y personalizados para mesas de postres y celebraciones.
+                            </p>
+
+                            <a href="#"> Descubrir <span>→</span> </a>
+
+                        </section>
+
+                    </article>
+
+                    <!-- ALFAJORES -->
+
+                    <article class="producto">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/productos/alfajores.webp" alt="Alfajores">
+
+                        </figure>
+
+                        <section class="contenido-producto">
+
+                            <h3>Alfajores</h3>
+
+                            <p>
+                                Artesanales, suaves y perfectos para regalar o compartir.
+                            </p>
+
+                            <a href="#"> Descubrir <span>→</span>
+                            </a>
+
+                        </section>
+
+                    </article>
+
+                    <!-- GALLETAS -->
+
+                    <article class="producto">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/productos/galletas.webp" alt="Galletas personalizadas">
+
+                        </figure>
+
+                        <section class="contenido-producto">
+
+                            <h3>Galletas personalizadas</h3>
+
+                            <p>
+                                Decoradas con impresión comestible para eventos únicos.
+                            </p>
+
+                            <a href="#"> Descubrir <span>→</span> </a>
+
+                        </section>
+
+                    </article>
+
+                    <!-- MINI DONAS -->
+
+                    <article class="producto">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/productos/donas.webp" alt="Mini donas">
+
+                        </figure>
+
+                        <section class="contenido-producto">
+
+                            <h3>Mini donas</h3>
+
+                            <p>
+                                Ideales para mesas dulces, fiestas y celebraciones especiales.
+                            </p>
+
+                            <a href="#"> Descubrir <span>→</span> </a>
+
+                        </section>
+
+                    </article>
+
+                    <!-- DESAYUNOS -->
+
+                    <article class="producto">
+
+                        <figure>
+
+                            <img src="recursos/imagenes/productos/desayunos.webp" alt="Desayunos sorpresa">
+
+                        </figure>
+
+                        <section class="contenido-producto">
+
+                            <h3>Desayunos sorpresa</h3>
+
+                            <p>
+                                Regala una experiencia inolvidable con detalles llenos de amor.
+                            </p>
+
+                            <a href="#">  Descubrir <span>→</span> </a>
+
+                        </section>
+
+                    </article>
+
+                </section>
+
+                <section class="productos-cta">
+
+                    <h3>
+                        ¿Buscas un producto diferente?
+                    </h3>
+
+                    <p>
+                        También realizamos pedidos personalizados para cualquier ocasión especial.
+                    </p>
+
+                    <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20cotizar%20una%20torta%20con%20ustedes."  class="boton boton-principal">
+
+                        Solicitar cotización
+
+                    </a>
+
+                </section>
+
+            </article>
+
+        </section>
+
+
+        <section class="porque-serena" id="porque-serena">
+
+            <article class="contenedor">
+
+                <header class="encabezado-seccion">
+
+                    <p class="etiqueta-seccion">
+                        ¿Por qué elegir Serena?
+                    </p>
+
+                    <h2 class="titulo-seccion">
+                        Mucho más que una repostería.
+                    </h2>
+
+                    <p class="texto-seccion">
+                        Cada creación nace del cuidado por los detalles, ingredientes de calidad y la pasión por hacer que cada celebración sea inolvidable.
+                    </p>
+
+                </header>
+
+                <section class="contenido-serena">
+
+                    <figure class="imagen-serena">
+
+                        <img src="recursos/imagenes/porque-serena/serena.webp" alt="Equipo de Serena elaborando una torta">
+
+                    </figure>
+
+                    <article class="beneficios-serena">
+
+                        <article class="beneficio">
+
+                            <span>✓</span>
+
+                            <section>
+
+                                <h3>Ingredientes de calidad</h3>
+
+                                <p>
+                                    Seleccionamos cuidadosamente cada ingrediente para garantizar sabor y frescura.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                        <article class="beneficio">
+
+                            <span>✓</span>
+
+                            <section>
+
+                                <h3>Diseños personalizados</h3>
+
+                                <p>
+                                    Cada torta se adapta a la temática y personalidad de tu celebración.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                        <article class="beneficio">
+
+                            <span>✓</span>
+
+                            <section>
+
+                                <h3>Elaboración artesanal</h3>
+
+                                <p>
+                                    Cada producto se prepara con dedicación y atención a cada detalle.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                        <article class="beneficio">
+
+                            <span>✓</span>
+
+                            <section>
+
+                                <h3>Entregas programadas</h3>
+
+                                <p>
+                                    Organizamos cada entrega para que todo llegue en el momento indicado.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                        <article class="beneficio">
+
+                            <span>✓</span>
+
+                            <section>
+
+                                <h3>Atención personalizada</h3>
+
+                                <p>
+                                    Te acompañamos durante todo el proceso para crear exactamente lo que imaginas.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                        <article class="beneficio">
+
+                            <span>✓</span>
+
+                            <section>
+
+                                <h3>Pasión por los detalles</h3>
+
+                                <p>
+                                    Cuidamos cada acabado para que el resultado sea tan especial como tu celebración.
+                                </p>
+
+                            </section>
+
+                        </article>
+
+                    </article>
+
+                </section>
+
+            </article>
+
+        </section>
+
+
+        <section class="testimonios" id="testimonios">
+
+            <article class="contenedor">
+
+                <!-- ENCABEZADO -->
+
+                <header class="encabezado-seccion">
+
+                    <p class="etiqueta-seccion">
+                        Experiencias Reales
+                    </p>
+
+                    <h2 class="titulo-seccion">
+                        Lo que dicen quienes celebraron con Serena
+                    </h2>
+
+                    <p class="texto-seccion">
+                        Cada celebración cuenta una historia. Estas son algunas de las
+                        experiencias compartidas por nuestros clientes después de confiar
+                        en nosotros para hacer de sus momentos algo inolvidable.
+                    </p>
+
+                </header>
+
+                <!-- INFORMACIÓN -->
+
+                <section class="cabecera-testimonios">
+
+                    <article class="calificacion">
+
+                        <h3>★★★★★ 4.9</h3>
+
+                        <p>
+                            Más de 200 celebraciones felices.
+                        </p>
+
+                    </article>
+
+                    <nav class="controles-testimonios">
+
+                        <button class="anterior-testimonio" aria-label="Anterior">
+
+                            <!-- Flecha izquierda -->
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <path d="M15 18l-6-6 6-6"/>
+
+                            </svg>
+
+                        </button>
+
+                        <button class="siguiente-testimonio" aria-label="Siguiente">
+
+                            <!-- Flecha derecha -->
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <path d="M9 18l6-6-6-6"/>
+
+                            </svg>
+
+                        </button>
+
+                    </nav>
+
+                </section>
+
+                <!-- CARRUSEL -->
+
+                <section class="slider-testimonios">
+
+                    <div class="track-testimonios">
+
+                        <!-- Testimonio 1 -->
+
+                        <article class="tarjeta-testimonio activa ">
+
+                            <span class="evento">
+                                15 años
+                            </span>
+
+                            <div class="estrellas">
+                                ★★★★★
+                            </div>
+
+                            <blockquote>
+                                "La torta fue incluso más hermosa de lo que imaginábamos.
+                                Cada detalle estaba perfectamente cuidado y nuestros invitados
+                                quedaron encantados."
+                            </blockquote>
+
+                            <footer>
+
+                                <div class="avatar">
+                                    VR
+                                </div>
+
+                                <div class="datos-cliente">
+
+                                    <h4>
+                                        Valentina Rojas
+                                    </h4>
+
+                                    <span>
+                                        Cliente Serena
+                                    </span>
+
+                                </div>
+
+                            </footer>
+
+                        </article>
+
+                        <!-- Testimonio 2 -->
+
+                        <article class="tarjeta-testimonio">
+
+                            <span class="evento">
+                                Boda
+                            </span>
+
+                            <div class="estrellas">
+                                ★★★★★
+                            </div>
+
+                            <blockquote>
+                                "Todo el proceso fue impecable. Nos acompañaron desde el primer
+                                momento y el resultado superó completamente nuestras expectativas."
+                            </blockquote>
+
+                            <footer>
+
+                                <div class="avatar">
+                                    DG
+                                </div>
+
+                                <div class="datos-cliente">
+
+                                    <h4>
+                                        Daniela Giraldo
+                                    </h4>
+
+                                    <span>
+                                        Cliente Serena
+                                    </span>
+
+                                </div>
+
+                            </footer>
+
+                        </article>
+
+                        <!-- Testimonio 3 -->
+
+                        <article class="tarjeta-testimonio">
+
+                            <span class="evento">
+                                Cumpleaños
+                            </span>
+
+                            <div class="estrellas">
+                                ★★★★★
+                            </div>
+
+                            <blockquote>
+                                "Sin duda fue la mejor decisión. El diseño, el sabor y la atención
+                                hicieron que nuestro cumpleaños fuera realmente inolvidable."
+                            </blockquote>
+
+                            <footer>
+
+                                <div class="avatar">
+                                    SR
+                                </div>
+
+                                <div class="datos-cliente">
+
+                                    <h4>
+                                        Santiago Restrepo
+                                    </h4>
+
+                                    <span>
+                                        Cliente Serena
+                                    </span>
+
+                                </div>
+
+                            </footer>
+
+                        </article>
+
+                        <!-- Testimonio 4 -->
+
+                        <article class="tarjeta-testimonio">
+
+                            <span class="evento">
+                                Baby Shower
+                            </span>
+
+                            <div class="estrellas">
+                                ★★★★★
+                            </div>
+
+                            <blockquote>
+                                "No solo recibimos una torta hermosa, también una experiencia llena
+                                de dedicación y excelente servicio."
+                            </blockquote>
+
+                            <footer>
+
+                                <div class="avatar">
+                                    CM
+                                </div>
+
+                                <div class="datos-cliente">
+
+                                    <h4>
+                                        Camila Montoya
+                                    </h4>
+
+                                    <span>
+                                        Cliente Serena
+                                    </span>
+
+                                </div>
+
+                            </footer>
+
+                        </article>
+
+                        <!-- Testimonio 5 -->
+
+                        <article class="tarjeta-testimonio">
+
+                            <span class="evento">
+                                Grado
+                            </span>
+
+                            <div class="estrellas">
+                                ★★★★★
+                            </div>
+
+                            <blockquote>
+                                "La presentación fue espectacular. Todo llegó puntual y con una
+                                calidad que superó nuestras expectativas."
+                            </blockquote>
+
+                            <footer>
+
+                                <div class="avatar">
+                                    AF
+                                </div>
+
+                                <div class="datos-cliente">
+
+                                    <h4>
+                                        Andrés Fernández
+                                    </h4>
+
+                                    <span>
+                                        Cliente Serena
+                                    </span>
+
+                                </div>
+
+                            </footer>
+
+                        </article>
+
+                        <!-- Testimonio 6 -->
+
+                        <article class="tarjeta-testimonio">
+
+                            <span class="evento">
+                                Aniversario
+                            </span>
+
+                            <div class="estrellas">
+                                ★★★★★
+                            </div>
+
+                            <blockquote>
+                                "Desde la atención hasta el último detalle todo fue perfecto.
+                                Definitivamente volveremos a elegir Serena."
+                            </blockquote>
+
+                            <footer>
+
+                                <div class="avatar">
+                                    MP
+                                </div>
+
+                                <div class="datos-cliente">
+
+                                    <h4>
+                                        Mariana Pérez
+                                    </h4>
+
+                                    <span>
+                                        Cliente Serena
+                                    </span>
+
+                                </div>
+
+                            </footer>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+                <div class="indicadores-testimonios">
+
+                    <button class="activo"></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section class="ventajas" id="ventajas">
+
+            <article class="contenedor">
+
+                <header class="encabezado-seccion">
+
+                    <p class="etiqueta-seccion">
+                        Nuestra Diferencia
+                    </p>
+
+                    <h2 class="titulo-seccion">
+                        ¿Por qué elegir Serena?
+                    </h2>
+
+                    <p class="texto-seccion">
+                        Más que elaborar postres, creamos experiencias memorables. Cada
+                        detalle refleja nuestro compromiso con la calidad, la creatividad
+                        y la satisfacción de quienes confían en Serena.
+                    </p>
+
+                </header>
+
+                <section class="grid-ventajas">
+
+                    <article class="tarjeta-ventaja">
+
+                        <figure class="icono-ventaja">
+                            <i class="fa-solid fa-crown"></i>
+                        </figure>
+
+                        <h3>Ingredientes Premium</h3>
+
+                        <p>
+                            Seleccionamos ingredientes de alta calidad para garantizar
+                            un sabor excepcional en cada creación.
+                        </p>
+
+                    </article>
+
+                    <article class="tarjeta-ventaja">
+
+                        <figure class="icono-ventaja">
+                            <i class="fa-solid fa-palette"></i>
+                        </figure>
+
+                        <h3>Diseño Exclusivo</h3>
+
+                        <p>
+                            Cada torta se diseña especialmente para reflejar el estilo
+                            y la esencia de tu celebración.
+                        </p>
+
+                    </article>
+
+                    <article class="tarjeta-ventaja">
+
+                        <figure class="icono-ventaja">
+                            <i class="fa-solid fa-heart"></i>
+                        </figure>
+
+                        <h3>Pasión en Cada Detalle</h3>
+
+                        <p>
+                            Trabajamos con dedicación para que cada acabado transmita
+                            elegancia, delicadeza y personalidad.
+                        </p>
+
+                    </article>
+
+                    <article class="tarjeta-ventaja">
+
+                        <figure class="icono-ventaja">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </figure>
+
+                        <h3>Entregas Confiables</h3>
+
+                        <p>
+                            Cumplimos con los tiempos acordados para que disfrutes de tu
+                            celebración sin preocupaciones.
+                        </p>
+
+                    </article>
+
+                    <article class="tarjeta-ventaja">
+
+                        <figure class="icono-ventaja">
+                            <i class="fa-solid fa-award"></i>
+                        </figure>
+
+                        <h3>Experiencia Artesanal</h3>
+
+                        <p>
+                            Cada proyecto reúne técnica, creatividad y años de experiencia
+                            creando momentos inolvidables.
+                        </p>
+
+                    </article>
+
+                    <article class="tarjeta-ventaja">
+
+                        <figure class="icono-ventaja">
+                            <i class="fa-solid fa-comments"></i>
+                        </figure>
+
+                        <h3>Acompañamiento Personal</h3>
+
+                        <p>
+                            Te asesoramos durante todo el proceso para ayudarte a elegir
+                            la opción ideal para cada ocasión.
+                        </p>
+
+                    </article>
+
+                </section>
+
+            </article>
+
+        </section>
+
+
+        <section class="cta" id="contacto">
+
+            <article class="contenedor">
+
+                <section class="contenido-cta">
+
+                    <figure class="imagen-cta">
+
+                        <img src="img/cta/torta-premium.webp" alt="Torta personalizada Serena">
+
+                    </figure>
+
+                    <article class="card-cta">
+
+                        <p class="etiqueta-seccion">
+                            Tu Próxima Celebración
+                        </p>
+
+                        <h2>
+                            Merece una creación única e inolvidable.
+                        </h2>
+
+                        <p>
+                            Cuéntanos tu idea y diseñaremos una torta o detalle
+                            personalizado que hará de tu celebración un recuerdo
+                            especial para toda la vida.
+                        </p>
+
+                        <ul class="lista-cta">
+
+                            <li>
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Atención personalizada.
+
+                            </li>
+
+                            <li>
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Cotización sin compromiso.
+
+                            </li>
+
+                            <li>
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Respuesta rápida por WhatsApp.
+
+                            </li>
+
+                        </ul>
+
+                        <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20cotizar%20una%20torta%20con%20ustedes." 
+                        class="boton"
+                        target="_blank">
+
+                            <span>Quiero mi torta personalizada</span>
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+                    </article>
+
+                </section>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <article class="contenedor">
+
+            <section class="contenido-footer">
+
+                <!-- MARCA -->
+
+                <article class="marca-footer">
+
+                    <a href="#inicio" class="logo-footer">
+
+                        <img src="recursos/imagenes/logosinfondo.webp"alt="Serena">
+
+                    </a>
+
+                    <p>
+
+                        Endulzando los momentos más especiales con
+                        creaciones artesanales hechas con pasión,
+                        creatividad y mucho amor.
+
+                    </p>
+
+                    <nav class="redes-footer">
+
+                        <a href="https://www.instagram.com/serenapastel/" aria-label="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20cotizar%20una%20torta%20con%20ustedes." aria-label="WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+                    </nav>
+
+                </article>
+
+                <!-- NAVEGACIÓN -->
+
+                <article>
+
+                    <h3>Navegación</h3>
+
+                    <nav class="menu-footer">
+
+                        <a class="activo" href="#inicio">Inicio</a>
+
+                        <a href="#especialidades">Nuestras especialidades</a>
+
+                        <a href="#personalizados">Creaciones Personalizadas</a>
+                        
+                        <a href="#productos">Nuestros Productos</a></li>
+
+                        <a href="#porque-serena">Nosotros</a></li>
+
+                        <a href="#contacto">Contacto</a></li>
+
+                    </nav>
+
+                </article>
+
+                <!-- CONTACTO -->
+
+                <article>
+
+                    <h3>Contacto</h3>
+
+                    <nav class="menu-footer">
+
+                        <a href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20cotizar%20una%20torta%20con%20ustedes." target="_blank" >WhatsApp</a>
+
+                        <a href="https://www.instagram.com/serenapastel/">Instagram</a>
+
+                        <a href="#">serenapanypastel@gmail.com</a>
+
+                        <a href="https://share.google/yBrGTDFLtnjVMuj3e">Rionegro, Antioquia</a>
+
+                    </nav>
+
+                </article>
+
+            </section>
+
+            <section class="footer-inferior">
+
+                <p>
+
+                    © 2026 Serena Pastelería Artesanal.
+                    Todos los derechos reservados.
+
+                </p>
+
+                <p>
+
+                    Diseñado y desarrollado por
+
+                    <a href="https://www.instagram.com/vertriss.co/">
+
+                        VERTRISS
+
+                    </a>
+
+                </p>
+
+            </section>
+
+        </article>
+
+    </footer>
+
+
+    <aside class="mensaje-whatsapp">
+
+        <article class="contenido-mensaje">
+
+            <figure class="mensaje-logo">
+
+                <img src="recursos/imagenes/logosinfondo.webp"alt="Serena">
+
+            </figure>
+
+            <section class="texto-mensaje">
+
+                <h4>SERENA</h4>
+
+                <p>
+
+                    Hablemos de tu próxima celebración. ✨
+
+                </p>
+
+            </section>
+
+        </article>
+
+    </aside>
+
+    <a
+        href="https://wa.me/573185057723?text=Hola%20Serena,%20quiero%20cotizar%20una%20torta%20personalizada."
+        class="whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <script src="js/slider.js"></script>
+    <script src="js/testimonios.js"></script>
+    <script src="js/whatsapp.js"></script>
+    
+</body>
+</html>
