@@ -7,16 +7,10 @@
   },
   "disenos": [
     {
-      "nombre": "Diamond Sparkle",
-      "tags": "Brillos • Plateado • Blanco",
+      "nombre": "🧚‍♀️🍄 Torta temática de hadas – 15 años ✨",
+      "tags": "Diseñada y decorada completamente a mano, con un mágico bosque lleno de flores, honguitos, haditas y una casita encantada. 🌿💚",
       "precio": 150000,
-      "imagen": "recursos/imagenes/15-anos/diseno-7.webp"
-    },
-    {
-      "nombre": "Pastel Garden",
-      "tags": "Flores • Menta • Rosado",
-      "precio": 150000,
-      "imagen": "recursos/imagenes/15-anos/diseno-8.webp"
+      "imagen": "/recursos/imagenes/uploads/whatsapp-image-2026-09-21-at-11.35.35-pm.jpeg"
     },
     {
       "nombre": "Classic Princess",
