@@ -7,24 +7,6 @@
   },
   "disenos": [
     {
-      "nombre": "Elegance Rose",
-      "tags": "Rosas • Dorado • Perlas",
-      "precio": 150000,
-      "imagen": "recursos/imagenes/15-anos/diseno-1.webp"
-    },
-    {
-      "nombre": "Royal Blush",
-      "tags": "Rosado • Perlas • Encaje",
-      "precio": 150000,
-      "imagen": "recursos/imagenes/15-anos/diseno-2.webp"
-    },
-    {
-      "nombre": "Golden Crown",
-      "tags": "Corona • Dorado • Blanco",
-      "precio": 150000,
-      "imagen": "recursos/imagenes/15-anos/diseno-3.webp"
-    },
-    {
       "nombre": "Vintage Chic",
       "tags": "Encaje • Beige • Perlas",
       "precio": 150000,
