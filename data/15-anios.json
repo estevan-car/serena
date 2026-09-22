@@ -7,24 +7,6 @@
   },
   "disenos": [
     {
-      "nombre": "Vintage Chic",
-      "tags": "Encaje • Beige • Perlas",
-      "precio": 150000,
-      "imagen": "recursos/imagenes/15-anos/diseno-4.webp"
-    },
-    {
-      "nombre": "Midnight Glam",
-      "tags": "Negro • Dorado • Brillos",
-      "precio": 150000,
-      "imagen": "recursos/imagenes/15-anos/diseno-5.webp"
-    },
-    {
-      "nombre": "Floral Dream",
-      "tags": "Flores • Pastel • Blanco",
-      "precio": 150000,
-      "imagen": "recursos/imagenes/15-anos/diseno-6.webp"
-    },
-    {
       "nombre": "Diamond Sparkle",
       "tags": "Brillos • Plateado • Blanco",
       "precio": 150000,
